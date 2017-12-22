@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir file:///C:/GitHubRepo/ITK3-FHIR-eDischarge/schemas/codesystem.xsd">
-<id value="CodeSystem-PEC-ExemptionType-1"/>
-	<url value="https://fhir.nhs.uk/STU3/CodeSystem/PEC-ExemptionType-1"/>
-	<version value="0.0.2"/>
-	<name value="Prescription Exemption Checking Exemption Type"/>
+<id value="CodeSystem-Prescription-Exemption-Type-1"/>
+	<url value="https://fhir.nhs.uk/STU3/CodeSystem/Prescription-Exemption-Type-1"/>
+	<version value="0.0.1"/>
+	<name value="Prescription Exemption Type"/>
 	<status value="draft"/>
 	<date value="2017-12-20T00:00:00+01:00"/>
 	<publisher value="NHS Digital"/>
@@ -15,11 +15,11 @@
 			<use value="work"/>
 		</telecom>
 	</contact>
-	<description value="A code system that enumerates patient PEC ExemptionType."/>
-	<purpose value="This code system is defined to be bound to the PEC Exemption Type listed."/>
+	<description value="A code system that enumerates patient Prescription Exemption Type."/>
+	<purpose value="This code system is defined to be bound to the Prescription Exemption Type listed."/>
 	<copyright value="Copyright © 2017 Health and Social Care Information Centre. NHS Digital is the trading name of the Health and Social Care Information Centre."/>
 	<caseSensitive value="true"/>
-	<valueSet value="https://fhir.nhs.uk/STU3/ValueSet/PEC-ExemptionType-1"/>
+	<valueSet value="https://fhir.nhs.uk/STU3/ValueSet/Prescription-Exemption-Type-1"/>
 	<content value="complete"/>
 		<concept>
 			<code value="9002"/>
