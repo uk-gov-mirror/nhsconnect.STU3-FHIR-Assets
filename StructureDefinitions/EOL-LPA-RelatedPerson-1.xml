@@ -2851,7 +2851,7 @@
       <short value="phone | fax | email | pager | url | sms | other" />
       <definition value="Telecommunications form for contact point - what communications system is required to make use of the contact." />
       <comment value="Note that FHIR strings may not exceed 1MB in size" />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <base>
         <path value="ContactPoint.system" />
@@ -2946,7 +2946,7 @@
       <definition value="Identifies the purpose for the contact point." />
       <comment value="This is labeled as &quot;Is Modifier&quot; because applications should not mistake a temporary or old contact etc.for a current/permanent one. Applications can assume that a contact is current unless it explicitly says that it is temporary or old." />
       <requirements value="Need to track the way a person uses this contact, so a user can choose which is appropriate for their purpose." />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <base>
         <path value="ContactPoint.use" />
@@ -4871,16 +4871,8 @@
       <path value="RelatedPerson.telecom" />
       <short value="Contact Type" />
     </element>
-    <element id="RelatedPerson.telecom.system">
-      <path value="RelatedPerson.telecom.system" />
-      <min value="1" />
-    </element>
     <element id="RelatedPerson.telecom.value">
       <path value="RelatedPerson.telecom.value" />
-      <min value="1" />
-    </element>
-    <element id="RelatedPerson.telecom.use">
-      <path value="RelatedPerson.telecom.use" />
       <min value="1" />
     </element>
     <element id="RelatedPerson.gender">
