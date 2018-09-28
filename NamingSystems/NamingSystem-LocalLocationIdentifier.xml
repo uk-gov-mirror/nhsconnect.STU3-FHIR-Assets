@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NamingSystem xmlns="http://hl7.org/fhir">
+	<meta>
+		<profile value="https://fhir.nhs.uk/STU3/StructureDefinition/NHSDigital-NamingSystem-1"/>
+	</meta>
+	<name value="Local Location Identifier"/>
+	<status value="draft"/>
+	<kind value="identifier"/>
+	<date value="2018-09-28"/>
+	<publisher value="NHS Digital"/>
+	<contact>
+		<name value="Interoperability Team"/>
+		<telecom>
+			<system value="email"/>
+			<value value="interoperabilityteam@nhs.net"/>
+			<use value="work"/>
+		</telecom>
+	</contact>
+	<responsible value="NHS Digital"/>
+	<description value="TBC"/>
+	<usage value="TBC"/>
+	<uniqueId>
+		<type value="uri"/>
+		<value value="https://fhir.nhs.uk/Id/local-location-identifier"/>
+		<preferred value="true"/>
+	</uniqueId>
+</NamingSystem>
