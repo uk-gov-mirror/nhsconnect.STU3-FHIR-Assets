@@ -30,7 +30,7 @@
 				</event>
 				<timestamp value="2018-10-13T12:00:00+00:00"/>
 				<source>
-					<endpoint value="urn:nhs-uk:addressing:ods:RY6"/>
+					<endpoint value="rn:nhs:addressing:asid:477121000325"/>
 				</source>
 				<responsible>
 					<reference value="urn:uuid:d46fb2f6-a1fe-11e8-98d0-529269fb1459"/>
@@ -186,7 +186,7 @@
 					<reference value="urn:uuid:d46fc14c-a1fe-11e8-98d0-529269fb1459"/>
 				</patient>
 				<period>
-					<start value="2018-10-13"/>
+					<start value="2018-10-13T12:00:00+00:00"/>
 				</period>
 				<team>
 					<reference value="urn:uuid:d46fcd0e-a1fe-11e8-98d0-529269fb1459"/>
