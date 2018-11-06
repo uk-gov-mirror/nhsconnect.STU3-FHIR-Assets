@@ -30,7 +30,7 @@
 				</event>
 				<timestamp value="2017-11-01T15:00:00+00:00"/>
 				<source>
-					<endpoint value="urn:nhs-uk:addressing:ods:X26"/>
+					<endpoint value="urn:nhs:addressing:asid:477121000323"/>
 				</source>
 				<responsible>
 					<reference value="https://directory.spineservices.nhs.uk/STU3/Organization/X26"/>
@@ -111,7 +111,7 @@
 					<value value="9912003888"/>
 				</identifier>
 				<name>
-					<use value="usual"/>
+					<use value="official"/>
 					<family value="DAWKINS"/>
 					<given value="Jack"/>
 				</name>
@@ -164,6 +164,12 @@
 				<meta>
 					<profile value="https://fhir.nhs.uk/STU3/StructureDefinition/EMS-PDS-GPRegistration-EpisodeOfCare-1"/>
 				</meta>
+				<extension url="https://fhir.nhs.uk/STU3/StructureDefinition/Extension-PDS-SystemEffectivePeriod-1">
+					<valuePeriod>
+						<start value="2017-10-10T15:00:00+00:00"/>
+						<end value="2017-10-30T15:00:00+00:00"/>
+					</valuePeriod>
+				</extension>
 				<status value="finished"/>
 				<type>
 					<coding>
@@ -180,6 +186,10 @@
 					<reference value="urn:uuid:e84bfc04-2d79-451e-84ef-a50116506088"/>
 					<display value="LIVERSEDGE MEDICAL CENTRE"/>
 				</managingOrganization>
+				<period>
+					<start value="2017-10-09T15:00:00+00:00"/>
+					<end value="2017-10-29T15:00:00+00:00"/>
+				</period>
 			</EpisodeOfCare>
 		</resource>
 	</entry>

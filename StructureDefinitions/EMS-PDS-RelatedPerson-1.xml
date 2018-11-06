@@ -3,9 +3,9 @@
   <meta>
     <lastUpdated value="2018-06-21T12:06:13.397+01:00" />
   </meta>
-  <url value="https://fhir.nhs.uk/STU3/StructureDefinition/DCH-RelatedPerson-1" />
-  <version value="1.1.0" />
-  <name value="DCH-RelatedPerson-1" />
+  <url value="https://fhir.nhs.uk/STU3/StructureDefinition/EMS-PDS-RelatedPerson-1" />
+  <version value="1.0.0" />
+  <name value="EMS-PDS-RelatedPerson-1" />
   <status value="draft" />
   <date value="2018-01-26T14:48:18.764+00:00" />
   <publisher value="NHS Digital" />
@@ -17,7 +17,7 @@
       <use value="work" />
     </telecom>
   </contact>
-  <description value="This RelatedPerson resource has been constrained to represent a person related to the patient, to support the Digital Child Health project." />
+  <description value="This RelatedPerson resource has been constrained to represent a person relationship for a demographic update." />
   <copyright value="Copyright © 2018 NHS Digital" />
   <fhirVersion value="3.0.1" />
   <kind value="resource" />
@@ -307,178 +307,6 @@
       </base>
       <type>
         <code value="Extension" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <expression value="hasValue() | (children().count() &gt; id.count())" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <constraint>
-        <key value="ext-1" />
-        <severity value="error" />
-        <human value="Must have either extensions or value[x], not both" />
-        <expression value="extension.exists() != value.exists()" />
-        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-      </constraint>
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value="N/A" />
-      </mapping>
-    </element>
-    <element id="RelatedPerson.extension:householdMember">
-      <path value="RelatedPerson.extension" />
-      <sliceName value="householdMember" />
-      <short value="The household member information for a person related to the Patient " />
-      <definition value="The household member information for a person related to the Patient " />
-      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
-      <alias value="extensions" />
-      <alias value="user content" />
-      <min value="0" />
-      <max value="1" />
-      <base>
-        <path value="DomainResource.extension" />
-        <min value="0" />
-        <max value="*" />
-      </base>
-      <type>
-        <code value="Extension" />
-        <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/Extension-DCH-HouseholdMember-1" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <expression value="hasValue() | (children().count() &gt; id.count())" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <constraint>
-        <key value="ext-1" />
-        <severity value="error" />
-        <human value="Must have either extensions or value[x], not both" />
-        <expression value="extension.exists() != value.exists()" />
-        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-      </constraint>
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value="N/A" />
-      </mapping>
-    </element>
-    <element id="RelatedPerson.extension:link">
-      <path value="RelatedPerson.extension" />
-      <sliceName value="link" />
-      <short value="Link to a Patient resource for a Related Person" />
-      <definition value="Link to a Patient resource for a Related Person" />
-      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
-      <alias value="extensions" />
-      <alias value="user content" />
-      <min value="0" />
-      <max value="1" />
-      <base>
-        <path value="DomainResource.extension" />
-        <min value="0" />
-        <max value="*" />
-      </base>
-      <type>
-        <code value="Extension" />
-        <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/Extension-DCH-Link-1" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <expression value="hasValue() | (children().count() &gt; id.count())" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <constraint>
-        <key value="ext-1" />
-        <severity value="error" />
-        <human value="Must have either extensions or value[x], not both" />
-        <expression value="extension.exists() != value.exists()" />
-        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-      </constraint>
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value="N/A" />
-      </mapping>
-    </element>
-    <element id="RelatedPerson.extension:parentalResponsibility">
-      <path value="RelatedPerson.extension" />
-      <sliceName value="parentalResponsibility" />
-      <short value="Whether the related or significant person has parental responsibility" />
-      <definition value="Whether the related or significant person has parental responsibility" />
-      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
-      <alias value="extensions" />
-      <alias value="user content" />
-      <min value="0" />
-      <max value="1" />
-      <base>
-        <path value="DomainResource.extension" />
-        <min value="0" />
-        <max value="*" />
-      </base>
-      <type>
-        <code value="Extension" />
-        <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/Extension-DCH-ParentalResponsibility-1" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <expression value="hasValue() | (children().count() &gt; id.count())" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <constraint>
-        <key value="ext-1" />
-        <severity value="error" />
-        <human value="Must have either extensions or value[x], not both" />
-        <expression value="extension.exists() != value.exists()" />
-        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-      </constraint>
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value="N/A" />
-      </mapping>
-    </element>
-    <element id="RelatedPerson.extension:significantIndividual">
-      <path value="RelatedPerson.extension" />
-      <sliceName value="significantIndividual" />
-      <short value="Whether an individual related to the child is deemed as key by family " />
-      <definition value="Whether an individual related to the child is deemed as key by family " />
-      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
-      <alias value="extensions" />
-      <alias value="user content" />
-      <min value="0" />
-      <max value="*" />
-      <base>
-        <path value="DomainResource.extension" />
-        <min value="0" />
-        <max value="*" />
-      </base>
-      <type>
-        <code value="Extension" />
-        <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/Extension-DCH-SignificantIndividual-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -1819,7 +1647,7 @@
       <comment value="This element is labeled as a modifier because it may be used to mark that the resource was created in error." />
       <requirements value="Need to be able to mark a related person record as not to be used, such as if it was created in error." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="RelatedPerson.active" />
         <min value="0" />
@@ -1867,7 +1695,11 @@
       </base>
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-DCH-Patient-1" />
+        <targetProfile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-EMS-Patient-1" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-EMS-PDS-Baby-Patient-1" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -2124,10 +1956,10 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="PatientRelationshipType" />
         </extension>
-        <strength value="extensible" />
+        <strength value="required" />
         <description value="The nature of the relationship between a patient and the related person" />
         <valueSetReference>
-          <reference value="https://fhir.nhs.uk/STU3/ValueSet/DCH-PersonRelationshipType-1" />
+          <reference value="https://fhir.nhs.uk/STU3/ValueSet/PersonRelationshipType-1" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -2385,6 +2217,7 @@
       <type>
         <code value="uri" />
       </type>
+      <fixedUri value="https://fhir.nhs.uk/STU3/CodeSystem/PersonRelationshipType-1" />
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -2503,7 +2336,7 @@
       <definition value="A representation of the meaning of the code in the system, following the rules of the system." />
       <comment value="Note that FHIR strings may not exceed 1MB in size" />
       <requirements value="Need to be able to carry a human-readable meaning of the code for readers that do not know  the system." />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <base>
         <path value="Coding.display" />
@@ -2632,8 +2465,8 @@
       <definition value="A name associated with the person." />
       <comment value="Names may be changed, or repudiated, or people may have different names in different contexts. Names may be divided into parts of different type that have variable significance depending on context, though the division into parts does not always matter. With personal names, the different parts may or may not be imbued with some implicit meaning; various cultures associate different importance with the name parts and the degree to which systems must care about name parts around the world varies widely." />
       <requirements value="Related persons need to be identified by name, but it is uncommon to need details about multiple other names for that person." />
-      <min value="1" />
-      <max value="1" />
+      <min value="0" />
+      <max value="*" />
       <base>
         <path value="RelatedPerson.name" />
         <min value="0" />
@@ -3784,7 +3617,7 @@
         <strength value="required" />
         <description value="The gender of a person used for administrative purposes." />
         <valueSetReference>
-          <reference value="https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-AdministrativeGender-1" />
+          <reference value="https://fhir.hl7.org.uk/ValueSet/CareConnect-AdministrativeGender-1" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -3804,7 +3637,7 @@
       <path value="RelatedPerson.birthDate" />
       <short value="The date on which the related person was born" />
       <definition value="The date on which the related person was born." />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <base>
         <path value="RelatedPerson.birthDate" />
@@ -4629,7 +4462,7 @@
       <comment value="When providing a summary view (for example with Observation.value[x]) Attachment should be represented with a brief display text such as &quot;Attachment&quot;." />
       <requirements value="Many EHR systems have the capability to capture an image of persons. Fits with newer social media usage too." />
       <min value="0" />
-      <max value="0" />
+      <max value="*" />
       <base>
         <path value="RelatedPerson.photo" />
         <min value="0" />
@@ -5088,7 +4921,7 @@
       <definition value="The period of time that this relationship is considered to be valid. If there are no dates defined, then the interval is unknown." />
       <comment value="This is not a duration - that's a measure of time (a separate type), but a duration that occurs at a fixed value of time. A Period specifies a range of time; the context of use will specify whether the entire range applies (e.g. &quot;the patient was an inpatient of the hospital for this time range&quot;) or one value from the range applies (e.g. &quot;give to the patient between these two times&quot;). If duration is required, specify the type as Interval|Duration." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="RelatedPerson.period" />
         <min value="0" />
@@ -5290,51 +5123,6 @@
     </element>
   </snapshot>
   <differential>
-    <element id="RelatedPerson.extension">
-      <path value="RelatedPerson.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="RelatedPerson.extension:householdMember">
-      <path value="RelatedPerson.extension" />
-      <sliceName value="householdMember" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/Extension-DCH-HouseholdMember-1" />
-      </type>
-    </element>
-    <element id="RelatedPerson.extension:link">
-      <path value="RelatedPerson.extension" />
-      <sliceName value="link" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/Extension-DCH-Link-1" />
-      </type>
-    </element>
-    <element id="RelatedPerson.extension:parentalResponsibility">
-      <path value="RelatedPerson.extension" />
-      <sliceName value="parentalResponsibility" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/Extension-DCH-ParentalResponsibility-1" />
-      </type>
-    </element>
-    <element id="RelatedPerson.extension:significantIndividual">
-      <path value="RelatedPerson.extension" />
-      <sliceName value="significantIndividual" />
-      <type>
-        <code value="Extension" />
-        <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/Extension-DCH-SignificantIndividual-1" />
-      </type>
-    </element>
     <element id="RelatedPerson.identifier">
       <path value="RelatedPerson.identifier" />
       <max value="1" />
@@ -5363,15 +5151,15 @@
       <path value="RelatedPerson.identifier.assigner" />
       <max value="0" />
     </element>
-    <element id="RelatedPerson.active">
-      <path value="RelatedPerson.active" />
-      <max value="0" />
-    </element>
     <element id="RelatedPerson.patient">
       <path value="RelatedPerson.patient" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-DCH-Patient-1" />
+        <targetProfile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-EMS-Patient-1" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-EMS-PDS-Baby-Patient-1" />
       </type>
     </element>
     <element id="RelatedPerson.patient.reference">
@@ -5385,9 +5173,9 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="PatientRelationshipType" />
         </extension>
-        <strength value="extensible" />
+        <strength value="required" />
         <valueSetReference>
-          <reference value="https://fhir.nhs.uk/STU3/ValueSet/DCH-PersonRelationshipType-1" />
+          <reference value="https://fhir.nhs.uk/STU3/ValueSet/PersonRelationshipType-1" />
         </valueSetReference>
       </binding>
     </element>
@@ -5399,6 +5187,7 @@
     <element id="RelatedPerson.relationship.coding.system">
       <path value="RelatedPerson.relationship.coding.system" />
       <min value="1" />
+      <fixedUri value="https://fhir.nhs.uk/STU3/CodeSystem/PersonRelationshipType-1" />
     </element>
     <element id="RelatedPerson.relationship.coding.version">
       <path value="RelatedPerson.relationship.coding.version" />
@@ -5406,13 +5195,6 @@
     </element>
     <element id="RelatedPerson.relationship.coding.code">
       <path value="RelatedPerson.relationship.coding.code" />
-      <min value="1" />
-    </element>
-    <element id="RelatedPerson.relationship.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="RelatedPerson.relationship.coding.display" />
       <min value="1" />
     </element>
     <element id="RelatedPerson.relationship.coding.userSelected">
@@ -5426,11 +5208,6 @@
       <path value="RelatedPerson.relationship.text" />
       <max value="0" />
     </element>
-    <element id="RelatedPerson.name">
-      <path value="RelatedPerson.name" />
-      <min value="1" />
-      <max value="1" />
-    </element>
     <element id="RelatedPerson.gender">
       <path value="RelatedPerson.gender" />
       <binding>
@@ -5442,21 +5219,9 @@
         </extension>
         <strength value="required" />
         <valueSetReference>
-          <reference value="https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-AdministrativeGender-1" />
+          <reference value="https://fhir.hl7.org.uk/ValueSet/CareConnect-AdministrativeGender-1" />
         </valueSetReference>
       </binding>
-    </element>
-    <element id="RelatedPerson.birthDate">
-      <path value="RelatedPerson.birthDate" />
-      <min value="1" />
-    </element>
-    <element id="RelatedPerson.photo">
-      <path value="RelatedPerson.photo" />
-      <max value="0" />
-    </element>
-    <element id="RelatedPerson.period">
-      <path value="RelatedPerson.period" />
-      <max value="0" />
     </element>
   </differential>
 </StructureDefinition>
