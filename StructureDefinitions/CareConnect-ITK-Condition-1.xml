@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2018-10-19T13:16:23.819+01:00" />
+    <lastUpdated value="2018-11-20T13:48:12.583+00:00" />
   </meta>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="pc" />
@@ -2902,7 +2902,7 @@
       <comment value="Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination." />
       <requirements value="0..1 to account for primarily narrative only resources." />
       <alias value="type" />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="Condition.code" />
@@ -6457,8 +6457,8 @@
     <element id="Condition.stage.summary.coding:snomedCT.extension:snomedCTDescriptionID">
       <path value="Condition.stage.summary.coding.extension" />
       <sliceName value="snomedCTDescriptionID" />
-      <short value="Additional Content defined by implementations" />
-      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." />
+      <short value="The SNOMED CT Description ID for the display" />
+      <definition value="The SNOMED CT Description ID for the display." />
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
@@ -6761,7 +6761,7 @@
       <definition value="Reference to a formal record of the evidence on which the staging assessment is based." />
       <comment value="References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository." />
       <min value="0" />
-      <max value="*" />
+      <max value="0" />
       <base>
         <path value="Condition.stage.assessment" />
         <min value="0" />
@@ -6883,8 +6883,8 @@
       <short value="Literal reference, Relative, internal or absolute URL" />
       <definition value="A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources." />
       <comment value="Using absolute URLs provides a stable scalable approach suitable for a cloud/web context, while using relative/logical references provides a flexible approach suitable for use when trading across closed eco-system boundaries.   Absolute URLs do not need to point to a FHIR RESTful server, though this is the preferred approach. If the URL conforms to the structure &quot;/[type]/[id]&quot; then it should be assumed that the reference is to a FHIR RESTful server." />
-      <min value="1" />
-      <max value="1" />
+      <min value="0" />
+      <max value="0" />
       <base>
         <path value="Reference.reference" />
         <min value="0" />
@@ -8482,6 +8482,10 @@
       <path value="Condition.severity.coding.display" />
       <min value="1" />
     </element>
+    <element id="Condition.code">
+      <path value="Condition.code" />
+      <min value="1" />
+    </element>
     <element id="Condition.code.coding">
       <path value="Condition.code.coding" />
       <slicing>
@@ -8520,7 +8524,6 @@
       <sliceName value="snomedCTDescriptionID" />
       <short value="Optional Extensions Element" />
       <definition value="Optional Extension Element - found in all resources." />
-      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid" />
@@ -8584,7 +8587,6 @@
       <sliceName value="snomedCTDescriptionID" />
       <short value="Optional Extensions Element" />
       <definition value="Optional Extension Element - found in all resources." />
-      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid" />
@@ -8683,7 +8685,6 @@
     <element id="Condition.stage.summary.coding:snomedCT.extension:snomedCTDescriptionID">
       <path value="Condition.stage.summary.coding.extension" />
       <sliceName value="snomedCTDescriptionID" />
-      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid" />
@@ -8711,6 +8712,7 @@
     </element>
     <element id="Condition.stage.assessment">
       <path value="Condition.stage.assessment" />
+      <max value="0" />
       <type>
         <code value="Reference" />
         <targetProfile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Observation-1" />
@@ -8718,7 +8720,7 @@
     </element>
     <element id="Condition.stage.assessment.reference">
       <path value="Condition.stage.assessment.reference" />
-      <min value="1" />
+      <max value="0" />
     </element>
     <element id="Condition.evidence">
       <path value="Condition.evidence" />

@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Composition" />
   <meta>
-    <lastUpdated value="2018-11-16T12:17:09.442+00:00" />
+    <lastUpdated value="2018-11-20T13:13:32.188+00:00" />
   </meta>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
     <valueCode value="sd" />
@@ -348,7 +348,7 @@
       <path value="Composition.extension" />
       <sliceName value="careSettingTypeExtension" />
       <short value="Optional Extensions Element" />
-      <definition value="May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." />
+      <definition value="Optional Extension Element - found in all resources." />
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
       <alias value="extensions" />
       <alias value="user content" />
@@ -1758,7 +1758,7 @@
     </element>
     <element id="Composition.type">
       <path value="Composition.type" />
-      <short value="Kind of composition (LOINC if possible)" />
+      <short value="Kind of composition (SNOMED CT)" />
       <definition value="Specifies the particular kind of composition (e.g. History and Physical, Discharge Summary, Progress Note). This usually equates to the purpose of making the composition." />
       <comment value="For Composition type, LOINC is ubiquitous and strongly endorsed by HL7. Most implementation guides will require a specific LOINC code, or use LOINC as an extensible binding." />
       <requirements value="Key metadata element describing the composition, used in searching/filtering." />
@@ -61884,6 +61884,7 @@
     </element>
     <element id="Composition.type">
       <path value="Composition.type" />
+      <short value="Kind of composition (SNOMED CT)" />
       <mustSupport value="true" />
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
