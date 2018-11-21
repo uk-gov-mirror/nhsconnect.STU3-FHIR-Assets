@@ -948,6 +948,7 @@ as a result of the outpatient encounter are included)</td>
 				<patient>
 					<reference value="urn:uuid:4e17be8f-8694-47e3-8740-ccf306f6cf02"/>
 				</patient>
+				<assertedDate value="2015-02-12"/>
 			</AllergyIntolerance>
 		</resource>
 	</entry>

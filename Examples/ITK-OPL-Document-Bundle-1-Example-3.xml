@@ -727,6 +727,7 @@
 				<patient>
 					<reference value="urn:uuid:dc3491e5-a4c0-4d7e-b879-7bd86133e61f"/>
 				</patient>
+				<assertedDate value="2015-02-12"/>
 			</AllergyIntolerance>
 		</resource>
 	</entry>

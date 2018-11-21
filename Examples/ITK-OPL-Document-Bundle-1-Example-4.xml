@@ -944,6 +944,7 @@ She has longstanding mild dyspepsia for which she takes antacid as necessary. It
 				<patient>
 					<reference value="urn:uuid:29995d4a-1ba7-404d-b161-86670848675b"/>
 				</patient>
+				<assertedDate value="2015-02-12"/>
 				<onsetString value="She first experienced a reaction aged 12."/>
 				<reaction>
 					<manifestation>

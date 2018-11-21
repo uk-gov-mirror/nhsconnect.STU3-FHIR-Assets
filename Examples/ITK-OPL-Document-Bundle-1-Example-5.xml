@@ -1001,6 +1001,7 @@
 				<patient>
 					<reference value="urn:uuid:6c66c32f-655a-4b9c-9bb7-5ae31fc93010"/>
 				</patient>
+				<assertedDate value="2015-02-12"/>
 			</AllergyIntolerance>
 		</resource>
 	</entry>

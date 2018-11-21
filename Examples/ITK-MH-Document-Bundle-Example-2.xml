@@ -1062,6 +1062,7 @@ will need weight and general health monitoring</p>
 				<patient>
 		<reference value="urn:uuid:1c5a26fd-b317-4fc0-8e0d-7ed8c75d34d8"/>
 				</patient>
+				<assertedDate value="2015-02-12"/>
 			</AllergyIntolerance>
 		</resource>
 	</entry>

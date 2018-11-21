@@ -847,6 +847,7 @@
 				<patient>
 					<reference value="urn:uuid:862b638b-6f75-4f4b-870f-40d9c8f99e57"/>
 				</patient>
+				<assertedDate value="2011-02-12"/>
 				<onsetString value="4 years ago"/>
 				<reaction>
 					<manifestation>

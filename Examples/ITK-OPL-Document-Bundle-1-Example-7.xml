@@ -1109,6 +1109,7 @@ New medication:<br/>
 				<patient>
 					<reference value="urn:uuid:159c7259-4253-4e21-90c7-87497a2ba863"/>
 				</patient>
+				<assertedDate value="2015-02-12"/>
 			</AllergyIntolerance>
 		</resource>
 	</entry>

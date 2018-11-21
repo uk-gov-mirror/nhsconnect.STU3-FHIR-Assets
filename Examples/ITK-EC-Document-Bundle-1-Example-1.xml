@@ -1118,6 +1118,7 @@ LUCs						0.2			x10*9/L			&lt; 0.4
     <patient>
      <reference value="urn:uuid:c8225cc8-8026-466f-80f8-fc2832a4b9d5"/>
     </patient>
+    <assertedDate value="2015-02-12"/>
     <reaction>
      <manifestation>
       <coding>
