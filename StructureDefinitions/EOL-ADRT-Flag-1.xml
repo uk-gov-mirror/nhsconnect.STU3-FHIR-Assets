@@ -1,7 +1,7 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://fhir.nhs.uk/STU3/StructureDefinition/EOL-ADRT-Flag-1" />
-  <version value="1.0.0" />
+  <version value="1.0.1" />
   <name value="EOL-ADRT-Flag-1" />
   <status value="draft" />
   <date value="2019-01-28T10:32:48.356+00:00" />
@@ -487,7 +487,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Flag.extension:conditionList.value[x]:valueReference">
+    <element id="Flag.extension:conditionList.valueReference:valueReference">
       <path value="Flag.extension.valueReference" />
       <sliceName value="valueReference" />
       <short value="ADRT Flag for EOL Condition List" />
@@ -3893,7 +3893,7 @@
         <profile value="http://hl7.org/fhir/StructureDefinition/flag-detail" />
       </type>
     </element>
-    <element id="Flag.extension:conditionList.value[x]:valueReference">
+    <element id="Flag.extension:conditionList.valueReference:valueReference">
       <path value="Flag.extension.valueReference" />
       <sliceName value="valueReference" />
       <short value="ADRT Flag for EOL Condition List" />
