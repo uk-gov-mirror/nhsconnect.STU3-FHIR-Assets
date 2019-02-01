@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://fhir.nhs.uk/STU3/StructureDefinition/EOL-ADRT-Flag-1" />
-  <version value="1.0.1" />
+  <version value="1.0.0" />
   <name value="EOL-ADRT-Flag-1" />
   <status value="draft" />
   <date value="2019-01-28T10:32:48.356+00:00" />
