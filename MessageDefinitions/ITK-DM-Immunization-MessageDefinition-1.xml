@@ -5,12 +5,12 @@
 	<url value="https://fhir.nhs.uk/STU3/MessageDefinition/ITK-DM-Immunization-MessageDefinition-1"/>
 	<identifier>
 		<system value="https://tools.ietf.org/html/rfc4122"/>
-		<value value="8993de24-433f-4fe9-adbd-c60fe188f172"/>
+		<value value="2f69a69d-a3f1-45bd-95c9-a3e6365b11e0"/>
 	</identifier>
 	<version value="1.0.1"/>
 	<title value="ITK DM Immunization Message Definition"/>
 	<status value="active"/>
-	<date value="2018-10-04T14:17:59.265+01:00"/>
+	<date value="2019-03-11T12:34:05.777+00:00"/>
 	<copyright value="Copyright © 2018 NHS Digital"/>
 	<event>
 		<system value="https://fhir.nhs.uk/STU3/CodeSystem/ITK-MessageEvent-2"/>
@@ -32,7 +32,7 @@
 						</valueReference>
 					</extension>
 					<extension url="version">
-						<valueString value="1.0.0"/>
+						<valueString value="1.2.0"/>
 					</extension>
 				</extension>
 				<extension url="utilisedAsset">
@@ -45,7 +45,7 @@
 						</valueReference>
 					</extension>
 					<extension url="version">
-						<valueString value="1.0.0"/>
+						<valueString value="1.2.0"/>
 					</extension>
 				</extension>
 				<extension url="utilisedAsset">
@@ -58,7 +58,7 @@
 						</valueReference>
 					</extension>
 					<extension url="version">
-						<valueString value="1.0.0"/>
+						<valueString value="1.1.0"/>
 					</extension>
 				</extension>
 				<extension url="utilisedAsset">
@@ -71,7 +71,7 @@
 						</valueReference>
 					</extension>
 					<extension url="version">
-						<valueString value="1.0.0"/>
+						<valueString value="1.1.0"/>
 					</extension>
 				</extension>
 				<extension url="utilisedAsset">
@@ -84,7 +84,7 @@
 						</valueReference>
 					</extension>
 					<extension url="version">
-						<valueString value="1.0.0"/>
+						<valueString value="1.1.0"/>
 					</extension>
 				</extension>
 				<extension url="utilisedAsset">
@@ -97,7 +97,7 @@
 						</valueReference>
 					</extension>
 					<extension url="version">
-						<valueString value="1.1.0"/>
+						<valueString value="1.2.0"/>
 					</extension>
 				</extension>
 				<extension url="utilisedAsset">
@@ -110,7 +110,7 @@
 						</valueReference>
 					</extension>
 					<extension url="version">
-						<valueString value="0.0.1"/>
+						<valueString value="1.0.0"/>
 					</extension>
 				</extension>
 				<extension url="utilisedAsset">
@@ -123,7 +123,7 @@
 						</valueReference>
 					</extension>
 					<extension url="version">
-						<valueString value="1.1.0"/>
+						<valueString value="1.2.0"/>
 					</extension>
 				</extension>
 				<extension url="utilisedAsset">
@@ -136,7 +136,7 @@
 						</valueReference>
 					</extension>
 					<extension url="version">
-						<valueString value="1.0.0"/>
+						<valueString value="1.1.0"/>
 					</extension>
 				</extension>
 				<extension url="utilisedAsset">
@@ -149,7 +149,7 @@
 						</valueReference>
 					</extension>
 					<extension url="version">
-						<valueString value="1.0.0"/>
+						<valueString value="1.1.0"/>
 					</extension>
 				</extension>
 				<extension url="utilisedAsset">
@@ -162,7 +162,33 @@
 						</valueReference>
 					</extension>
 					<extension url="version">
+						<valueString value="1.1.0"/>
+					</extension>
+				</extension>
+				<extension url="utilisedAsset">
+					<extension url="type">
+						<valueCode value="StructureDefinition"/>
+					</extension>
+					<extension url="reference">
+						<valueReference>
+							<reference value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Observation-1"/>
+						</valueReference>
+					</extension>
+					<extension url="version">
 						<valueString value="1.0.0"/>
+					</extension>
+				</extension>
+				<extension url="utilisedAsset">
+					<extension url="type">
+						<valueCode value="StructureDefinition"/>
+					</extension>
+					<extension url="reference">
+						<valueReference>
+							<reference value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationRequest-1"/>
+						</valueReference>
+					</extension>
+					<extension url="version">
+						<valueString value="1.1.0"/>
 					</extension>
 				</extension>
 				<extension url="utilisedAsset">
@@ -175,7 +201,7 @@
 						</valueReference>
 					</extension>
 					<extension url="version">
-						<valueString value="1.0.0"/>
+						<valueString value="1.1.0"/>
 					</extension>
 				</extension>
 				<extension url="utilisedAsset">
@@ -201,7 +227,7 @@
 						</valueReference>
 					</extension>
 					<extension url="version">
-						<valueString value="1.1.0"/>
+						<valueString value="1.2.0"/>
 					</extension>
 				</extension>
 				<extension url="utilisedAsset">
@@ -214,7 +240,7 @@
 						</valueReference>
 					</extension>
 					<extension url="version">
-						<valueString value="1.0.0"/>
+						<valueString value="1.1.0"/>
 					</extension>
 				</extension>
 				<extension url="utilisedAsset">
@@ -227,7 +253,7 @@
 						</valueReference>
 					</extension>
 					<extension url="version">
-						<valueString value="1.2.0"/>
+						<valueString value="1.3.0"/>
 					</extension>
 				</extension>
 				<extension url="utilisedAsset">
@@ -237,6 +263,19 @@
 					<extension url="reference">
 						<valueReference>
 							<reference value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-AllergyIntolerance-1"/>
+						</valueReference>
+					</extension>
+					<extension url="version">
+						<valueString value="1.2.0"/>
+					</extension>
+				</extension>
+				<extension url="utilisedAsset">
+					<extension url="type">
+						<valueCode value="StructureDefinition"/>
+					</extension>
+					<extension url="reference">
+						<valueReference>
+							<reference value="https://fhir.nhs.uk/STU3/StructureDefinition/ITK-Attachment-Binary-1"/>
 						</valueReference>
 					</extension>
 					<extension url="version">
@@ -266,7 +305,7 @@
 						</valueReference>
 					</extension>
 					<extension url="version">
-						<valueString value="1.0.0"/>
+						<valueString value="1.1.0"/>
 					</extension>
 				</extension>
 				<extension url="utilisedAsset">
@@ -292,7 +331,7 @@
 						</valueReference>
 					</extension>
 					<extension url="version">
-						<valueString value="1.0.0"/>
+						<valueString value="1.1.0"/>
 					</extension>
 				</extension>
 				<extension url="utilisedAsset">
@@ -305,7 +344,7 @@
 						</valueReference>
 					</extension>
 					<extension url="version">
-						<valueString value="1.0.0"/>
+						<valueString value="1.1.0"/>
 					</extension>
 				</extension>
 				<extension url="utilisedAsset">
@@ -331,7 +370,7 @@
 						</valueReference>
 					</extension>
 					<extension url="version">
-						<valueString value="1.0.0"/>
+						<valueString value="1.1.0"/>
 					</extension>
 				</extension>
 				<extension url="utilisedAsset">
@@ -344,7 +383,7 @@
 						</valueReference>
 					</extension>
 					<extension url="version">
-						<valueString value="1.0.0"/>
+						<valueString value="1.1.0"/>
 					</extension>
 				</extension>
 				<extension url="utilisedAsset">
@@ -357,7 +396,7 @@
 						</valueReference>
 					</extension>
 					<extension url="version">
-						<valueString value="1.0.0"/>
+						<valueString value="1.1.0"/>
 					</extension>
 				</extension>
 				<extension url="utilisedAsset">
@@ -383,7 +422,7 @@
 						</valueReference>
 					</extension>
 					<extension url="version">
-						<valueString value="1.0.0"/>
+						<valueString value="1.1.0"/>
 					</extension>
 				</extension>
 				<extension url="utilisedAsset">
@@ -396,7 +435,7 @@
 						</valueReference>
 					</extension>
 					<extension url="version">
-						<valueString value="1.0.0"/>
+						<valueString value="1.1.0"/>
 					</extension>
 				</extension>
 				<extension url="utilisedAsset">
@@ -422,7 +461,7 @@
 						</valueReference>
 					</extension>
 					<extension url="version">
-						<valueString value="1.0.0"/>
+						<valueString value="1.1.0"/>
 					</extension>
 				</extension>
 				<extension url="utilisedAsset">
@@ -435,7 +474,7 @@
 						</valueReference>
 					</extension>
 					<extension url="version">
-						<valueString value="1.0.0"/>
+						<valueString value="1.1.0"/>
 					</extension>
 				</extension>
 				<extension url="utilisedAsset">
@@ -461,7 +500,7 @@
 						</valueReference>
 					</extension>
 					<extension url="version">
-						<valueString value="1.0.0"/>
+						<valueString value="1.1.0"/>
 					</extension>
 				</extension>
 				<extension url="utilisedAsset">
@@ -474,7 +513,7 @@
 						</valueReference>
 					</extension>
 					<extension url="version">
-						<valueString value="1.0.0"/>
+						<valueString value="1.1.0"/>
 					</extension>
 				</extension>
 				<extension url="utilisedAsset">
@@ -487,7 +526,7 @@
 						</valueReference>
 					</extension>
 					<extension url="version">
-						<valueString value="1.0.0"/>
+						<valueString value="1.1.0"/>
 					</extension>
 				</extension>
 				<extension url="utilisedAsset">
@@ -500,7 +539,7 @@
 						</valueReference>
 					</extension>
 					<extension url="version">
-						<valueString value="1.0.0"/>
+						<valueString value="1.1.0"/>
 					</extension>
 				</extension>
 				<extension url="utilisedAsset">
@@ -513,7 +552,7 @@
 						</valueReference>
 					</extension>
 					<extension url="version">
-						<valueString value="1.0.0"/>
+						<valueString value="1.1.0"/>
 					</extension>
 				</extension>
 				<extension url="utilisedAsset">
@@ -526,7 +565,7 @@
 						</valueReference>
 					</extension>
 					<extension url="version">
-						<valueString value="1.0.0"/>
+						<valueString value="1.1.0"/>
 					</extension>
 				</extension>
 				<extension url="utilisedAsset">
@@ -539,7 +578,7 @@
 						</valueReference>
 					</extension>
 					<extension url="version">
-						<valueString value="1.0.0"/>
+						<valueString value="1.1.0"/>
 					</extension>
 				</extension>
 				<extension url="utilisedAsset">
@@ -552,7 +591,59 @@
 						</valueReference>
 					</extension>
 					<extension url="version">
-						<valueString value="1.0.0"/>
+						<valueString value="1.1.0"/>
+					</extension>
+				</extension>
+				<extension url="utilisedAsset">
+					<extension url="type">
+						<valueCode value="Extension"/>
+					</extension>
+					<extension url="reference">
+						<valueReference>
+							<reference value="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-MedicationRepeatInformation-1"/>
+						</valueReference>
+					</extension>
+					<extension url="version">
+						<valueString value="1.1.0"/>
+					</extension>
+				</extension>
+				<extension url="utilisedAsset">
+					<extension url="type">
+						<valueCode value="Extension"/>
+					</extension>
+					<extension url="reference">
+						<valueReference>
+							<reference value="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-MedicationStatusReason-1"/>
+						</valueReference>
+					</extension>
+					<extension url="version">
+						<valueString value="1.1.0"/>
+					</extension>
+				</extension>
+				<extension url="utilisedAsset">
+					<extension url="type">
+						<valueCode value="Extension"/>
+					</extension>
+					<extension url="reference">
+						<valueReference>
+							<reference value="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-PrescriptionType-1"/>
+						</valueReference>
+					</extension>
+					<extension url="version">
+						<valueString value="1.1.0"/>
+					</extension>
+				</extension>
+				<extension url="utilisedAsset">
+					<extension url="type">
+						<valueCode value="Extension"/>
+					</extension>
+					<extension url="reference">
+						<valueReference>
+							<reference value="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-MedicationQuantityText-1"/>
+						</valueReference>
+					</extension>
+					<extension url="version">
+						<valueString value="1.2.0"/>
 					</extension>
 				</extension>
 				<extension url="utilisedAsset">
@@ -565,7 +656,7 @@
 						</valueReference>
 					</extension>
 					<extension url="version">
-						<valueString value="1.0.0"/>
+						<valueString value="1.1.0"/>
 					</extension>
 				</extension>
 				<extension url="utilisedAsset">
@@ -578,7 +669,7 @@
 						</valueReference>
 					</extension>
 					<extension url="version">
-						<valueString value="1.0.0"/>
+						<valueString value="1.1.0"/>
 					</extension>
 				</extension>
 				<extension url="utilisedAsset">
@@ -604,7 +695,7 @@
 						</valueReference>
 					</extension>
 					<extension url="version">
-						<valueString value="1.0.0"/>
+						<valueString value="1.1.0"/>
 					</extension>
 				</extension>
 				<extension url="utilisedAsset">
@@ -617,7 +708,7 @@
 						</valueReference>
 					</extension>
 					<extension url="version">
-						<valueString value="1.0.0"/>
+						<valueString value="1.1.0"/>
 					</extension>
 				</extension>
 				<extension url="utilisedAsset">
@@ -630,7 +721,7 @@
 						</valueReference>
 					</extension>
 					<extension url="version">
-						<valueString value="1.0.0"/>
+						<valueString value="1.1.0"/>
 					</extension>
 				</extension>
 				<extension url="utilisedAsset">
@@ -643,7 +734,7 @@
 						</valueReference>
 					</extension>
 					<extension url="version">
-						<valueString value="1.0.0"/>
+						<valueString value="1.1.0"/>
 					</extension>
 				</extension>
 				<extension url="utilisedAsset">
@@ -656,7 +747,7 @@
 						</valueReference>
 					</extension>
 					<extension url="version">
-						<valueString value="1.0.0"/>
+						<valueString value="1.1.0"/>
 					</extension>
 				</extension>
 				<extension url="utilisedAsset">
@@ -734,7 +825,7 @@
 						</valueReference>
 					</extension>
 					<extension url="version">
-						<valueString value="1.0.0"/>
+						<valueString value="1.1.0"/>
 					</extension>
 				</extension>
 				<extension url="utilisedAsset">
@@ -747,7 +838,7 @@
 						</valueReference>
 					</extension>
 					<extension url="version">
-						<valueString value="1.0.0"/>
+						<valueString value="1.1.0"/>
 					</extension>
 				</extension>
 				<extension url="utilisedAsset">
@@ -760,7 +851,7 @@
 						</valueReference>
 					</extension>
 					<extension url="version">
-						<valueString value="1.0.0"/>
+						<valueString value="1.1.0"/>
 					</extension>
 				</extension>
 				<extension url="utilisedAsset">
@@ -773,7 +864,7 @@
 						</valueReference>
 					</extension>
 					<extension url="version">
-						<valueString value="1.0.0"/>
+						<valueString value="1.1.0"/>
 					</extension>
 				</extension>
 				<extension url="utilisedAsset">
@@ -786,7 +877,7 @@
 						</valueReference>
 					</extension>
 					<extension url="version">
-						<valueString value="1.0.0"/>
+						<valueString value="1.1.0"/>
 					</extension>
 				</extension>
 				<extension url="utilisedAsset">
@@ -799,7 +890,7 @@
 						</valueReference>
 					</extension>
 					<extension url="version">
-						<valueString value="1.0.0"/>
+						<valueString value="1.1.0"/>
 					</extension>
 				</extension>
 				<extension url="utilisedAsset">
@@ -812,7 +903,7 @@
 						</valueReference>
 					</extension>
 					<extension url="version">
-						<valueString value="1.0.0"/>
+						<valueString value="1.1.0"/>
 					</extension>
 				</extension>
 				<extension url="utilisedAsset">
@@ -994,7 +1085,7 @@
 						</valueReference>
 					</extension>
 					<extension url="version">
-						<valueString value="1.0.0"/>
+						<valueString value="1.1.0"/>
 					</extension>
 				</extension>
 				<extension url="utilisedAsset">
@@ -1007,7 +1098,20 @@
 						</valueReference>
 					</extension>
 					<extension url="version">
-						<valueString value="1.0.0"/>
+						<valueString value="1.1.0"/>
+					</extension>
+				</extension>
+				<extension url="utilisedAsset">
+					<extension url="type">
+						<valueCode value="ValueSet"/>
+					</extension>
+					<extension url="reference">
+						<valueReference>
+							<reference value="https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-NameUse-1"/>
+						</valueReference>
+					</extension>
+					<extension url="version">
+						<valueString value="3.0.1"/>
 					</extension>
 				</extension>
 				<extension url="utilisedAsset">
@@ -1085,7 +1189,7 @@
 						</valueReference>
 					</extension>
 					<extension url="version">
-						<valueString value="1.0.0"/>
+						<valueString value="1.1.0"/>
 					</extension>
 				</extension>
 				<extension url="utilisedAsset">
@@ -1098,7 +1202,7 @@
 						</valueReference>
 					</extension>
 					<extension url="version">
-						<valueString value="1.0.0"/>
+						<valueString value="1.1.0"/>
 					</extension>
 				</extension>
 				<extension url="utilisedAsset">
@@ -1111,7 +1215,7 @@
 						</valueReference>
 					</extension>
 					<extension url="version">
-						<valueString value="1.0.0"/>
+						<valueString value="1.1.0"/>
 					</extension>
 				</extension>
 				<extension url="utilisedAsset">
@@ -1124,7 +1228,20 @@
 						</valueReference>
 					</extension>
 					<extension url="version">
-						<valueString value="1.0.0"/>
+						<valueString value="1.1.0"/>
+					</extension>
+				</extension>
+				<extension url="utilisedAsset">
+					<extension url="type">
+						<valueCode value="ValueSet"/>
+					</extension>
+					<extension url="reference">
+						<valueReference>
+							<reference value="http://hl7.org/fhir/ValueSet/narrative-status"/>
+						</valueReference>
+					</extension>
+					<extension url="version">
+						<valueString value="3.0.1"/>
 					</extension>
 				</extension>
 				<extension url="utilisedAsset">
@@ -1241,7 +1358,7 @@
 						</valueReference>
 					</extension>
 					<extension url="version">
-						<valueString value="1.0.0"/>
+						<valueString value="1.1.0"/>
 					</extension>
 				</extension>
 				<extension url="utilisedAsset">
@@ -1254,7 +1371,7 @@
 						</valueReference>
 					</extension>
 					<extension url="version">
-						<valueString value="1.0.0"/>
+						<valueString value="1.1.0"/>
 					</extension>
 				</extension>
 				<extension url="utilisedAsset">
@@ -1280,7 +1397,7 @@
 						</valueReference>
 					</extension>
 					<extension url="version">
-						<valueString value="1.0.0"/>
+						<valueString value="1.1.0"/>
 					</extension>
 				</extension>
 				<extension url="utilisedAsset">
@@ -1316,6 +1433,370 @@
 					<extension url="reference">
 						<valueReference>
 							<reference value="http://hl7.org/fhir/ValueSet/body-site"/>
+						</valueReference>
+					</extension>
+					<extension url="version">
+						<valueString value="3.0.1"/>
+					</extension>
+				</extension>
+				<extension url="utilisedAsset">
+					<extension url="type">
+						<valueCode value="ValueSet"/>
+					</extension>
+					<extension url="reference">
+						<valueReference>
+							<reference value="https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-PrescriptionType-1"/>
+						</valueReference>
+					</extension>
+					<extension url="version">
+						<valueString value="1.1.0"/>
+					</extension>
+				</extension>
+				<extension url="utilisedAsset">
+					<extension url="type">
+						<valueCode value="ValueSet"/>
+					</extension>
+					<extension url="reference">
+						<valueReference>
+							<reference value="http://hl7.org/fhir/ValueSet/medication-request-status"/>
+						</valueReference>
+					</extension>
+					<extension url="version">
+						<valueString value="3.0.1"/>
+					</extension>
+				</extension>
+				<extension url="utilisedAsset">
+					<extension url="type">
+						<valueCode value="ValueSet"/>
+					</extension>
+					<extension url="reference">
+						<valueReference>
+							<reference value="http://hl7.org/fhir/ValueSet/medication-request-intent"/>
+						</valueReference>
+					</extension>
+					<extension url="version">
+						<valueString value="3.0.1"/>
+					</extension>
+				</extension>
+				<extension url="utilisedAsset">
+					<extension url="type">
+						<valueCode value="ValueSet"/>
+					</extension>
+					<extension url="reference">
+						<valueReference>
+							<reference value="http://hl7.org/fhir/ValueSet/medication-request-category"/>
+						</valueReference>
+					</extension>
+					<extension url="version">
+						<valueString value="3.0.1"/>
+					</extension>
+				</extension>
+				<extension url="utilisedAsset">
+					<extension url="type">
+						<valueCode value="ValueSet"/>
+					</extension>
+					<extension url="reference">
+						<valueReference>
+							<reference value="http://hl7.org/fhir/ValueSet/medication-request-priority"/>
+						</valueReference>
+					</extension>
+					<extension url="version">
+						<valueString value="3.0.1"/>
+					</extension>
+				</extension>
+				<extension url="utilisedAsset">
+					<extension url="type">
+						<valueCode value="ValueSet"/>
+					</extension>
+					<extension url="reference">
+						<valueReference>
+							<reference value="https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-MedicationCode-1"/>
+						</valueReference>
+					</extension>
+					<extension url="version">
+						<valueString value="1.1.0"/>
+					</extension>
+				</extension>
+				<extension url="utilisedAsset">
+					<extension url="type">
+						<valueCode value="ValueSet"/>
+					</extension>
+					<extension url="reference">
+						<valueReference>
+							<reference value="http://hl7.org/fhir/ValueSet/medication-status"/>
+						</valueReference>
+					</extension>
+					<extension url="version">
+						<valueString value="3.0.1"/>
+					</extension>
+				</extension>
+				<extension url="utilisedAsset">
+					<extension url="type">
+						<valueCode value="ValueSet"/>
+					</extension>
+					<extension url="reference">
+						<valueReference>
+							<reference value="https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-MedicationForm-1"/>
+						</valueReference>
+					</extension>
+					<extension url="version">
+						<valueString value="1.1.0"/>
+					</extension>
+				</extension>
+				<extension url="utilisedAsset">
+					<extension url="type">
+						<valueCode value="ValueSet"/>
+					</extension>
+					<extension url="reference">
+						<valueReference>
+							<reference value="http://hl7.org/fhir/ValueSet/medication-package-form"/>
+						</valueReference>
+					</extension>
+					<extension url="version">
+						<valueString value="3.0.1"/>
+					</extension>
+				</extension>
+				<extension url="utilisedAsset">
+					<extension url="type">
+						<valueCode value="ValueSet"/>
+					</extension>
+					<extension url="reference">
+						<valueReference>
+							<reference value="http://hl7.org/fhir/ValueSet/additional-instruction-codes"/>
+						</valueReference>
+					</extension>
+					<extension url="version">
+						<valueString value="3.0.1"/>
+					</extension>
+				</extension>
+				<extension url="utilisedAsset">
+					<extension url="type">
+						<valueCode value="ValueSet"/>
+					</extension>
+					<extension url="reference">
+						<valueReference>
+							<reference value="http://hl7.org/fhir/ValueSet/units-of-time"/>
+						</valueReference>
+					</extension>
+					<extension url="version">
+						<valueString value="3.0.1"/>
+					</extension>
+				</extension>
+				<extension url="utilisedAsset">
+					<extension url="type">
+						<valueCode value="ValueSet"/>
+					</extension>
+					<extension url="reference">
+						<valueReference>
+							<reference value="http://hl7.org/fhir/ValueSet/days-of-week"/>
+						</valueReference>
+					</extension>
+					<extension url="version">
+						<valueString value="3.0.1"/>
+					</extension>
+				</extension>
+				<extension url="utilisedAsset">
+					<extension url="type">
+						<valueCode value="ValueSet"/>
+					</extension>
+					<extension url="reference">
+						<valueReference>
+							<reference value="http://hl7.org/fhir/ValueSet/event-timing"/>
+						</valueReference>
+					</extension>
+					<extension url="version">
+						<valueString value="3.0.1"/>
+					</extension>
+				</extension>
+				<extension url="utilisedAsset">
+					<extension url="type">
+						<valueCode value="ValueSet"/>
+					</extension>
+					<extension url="reference">
+						<valueReference>
+							<reference value="http://hl7.org/fhir/ValueSet/timing-abbreviation"/>
+						</valueReference>
+					</extension>
+					<extension url="version">
+						<valueString value="3.0.1"/>
+					</extension>
+				</extension>
+				<extension url="utilisedAsset">
+					<extension url="type">
+						<valueCode value="ValueSet"/>
+					</extension>
+					<extension url="reference">
+						<valueReference>
+							<reference value="http://hl7.org/fhir/ValueSet/medication-as-needed-reason"/>
+						</valueReference>
+					</extension>
+					<extension url="version">
+						<valueString value="3.0.1"/>
+					</extension>
+				</extension>
+				<extension url="utilisedAsset">
+					<extension url="type">
+						<valueCode value="ValueSet"/>
+					</extension>
+					<extension url="reference">
+						<valueReference>
+							<reference value="http://hl7.org/fhir/ValueSet/approach-site-codes"/>
+						</valueReference>
+					</extension>
+					<extension url="version">
+						<valueString value="3.0.1"/>
+					</extension>
+				</extension>
+				<extension url="utilisedAsset">
+					<extension url="type">
+						<valueCode value="ValueSet"/>
+					</extension>
+					<extension url="reference">
+						<valueReference>
+							<reference value="http://hl7.org/fhir/ValueSet/route-codes"/>
+						</valueReference>
+					</extension>
+					<extension url="version">
+						<valueString value="3.0.1"/>
+					</extension>
+				</extension>
+				<extension url="utilisedAsset">
+					<extension url="type">
+						<valueCode value="ValueSet"/>
+					</extension>
+					<extension url="reference">
+						<valueReference>
+							<reference value="http://hl7.org/fhir/ValueSet/administration-method-codes"/>
+						</valueReference>
+					</extension>
+					<extension url="version">
+						<valueString value="3.0.1"/>
+					</extension>
+				</extension>
+				<extension url="utilisedAsset">
+					<extension url="type">
+						<valueCode value="ValueSet"/>
+					</extension>
+					<extension url="reference">
+						<valueReference>
+							<reference value="http://hl7.org/fhir/ValueSet/v3-SubstanceAdminSubstitutionReason"/>
+						</valueReference>
+					</extension>
+					<extension url="version">
+						<valueString value="2014-03-26"/>
+					</extension>
+				</extension>
+				<extension url="utilisedAsset">
+					<extension url="type">
+						<valueCode value="ValueSet"/>
+					</extension>
+					<extension url="reference">
+						<valueReference>
+							<reference value="http://hl7.org/fhir/ValueSet/observation-status"/>
+						</valueReference>
+					</extension>
+					<extension url="version">
+						<valueString value="3.0.1"/>
+					</extension>
+				</extension>
+				<extension url="utilisedAsset">
+					<extension url="type">
+						<valueCode value="ValueSet"/>
+					</extension>
+					<extension url="reference">
+						<valueReference>
+							<reference value="http://hl7.org/fhir/ValueSet/observation-category"/>
+						</valueReference>
+					</extension>
+					<extension url="version">
+						<valueString value="3.0.1"/>
+					</extension>
+				</extension>
+				<extension url="utilisedAsset">
+					<extension url="type">
+						<valueCode value="ValueSet"/>
+					</extension>
+					<extension url="reference">
+						<valueReference>
+							<reference value="http://hl7.org/fhir/ValueSet/observation-codes"/>
+						</valueReference>
+					</extension>
+					<extension url="version">
+						<valueString value="3.0.1"/>
+					</extension>
+				</extension>
+				<extension url="utilisedAsset">
+					<extension url="type">
+						<valueCode value="ValueSet"/>
+					</extension>
+					<extension url="reference">
+						<valueReference>
+							<reference value="http://hl7.org/fhir/ValueSet/observation-valueabsentreason"/>
+						</valueReference>
+					</extension>
+					<extension url="version">
+						<valueString value="3.0.1"/>
+					</extension>
+				</extension>
+				<extension url="utilisedAsset">
+					<extension url="type">
+						<valueCode value="ValueSet"/>
+					</extension>
+					<extension url="reference">
+						<valueReference>
+							<reference value="http://hl7.org/fhir/ValueSet/observation-interpretation"/>
+						</valueReference>
+					</extension>
+					<extension url="version">
+						<valueString value="3.0.1"/>
+					</extension>
+				</extension>
+				<extension url="utilisedAsset">
+					<extension url="type">
+						<valueCode value="ValueSet"/>
+					</extension>
+					<extension url="reference">
+						<valueReference>
+							<reference value="http://hl7.org/fhir/ValueSet/observation-methods"/>
+						</valueReference>
+					</extension>
+					<extension url="version">
+						<valueString value="3.0.1"/>
+					</extension>
+				</extension>
+				<extension url="utilisedAsset">
+					<extension url="type">
+						<valueCode value="ValueSet"/>
+					</extension>
+					<extension url="reference">
+						<valueReference>
+							<reference value="http://hl7.org/fhir/ValueSet/referencerange-meaning"/>
+						</valueReference>
+					</extension>
+					<extension url="version">
+						<valueString value="3.0.1"/>
+					</extension>
+				</extension>
+				<extension url="utilisedAsset">
+					<extension url="type">
+						<valueCode value="ValueSet"/>
+					</extension>
+					<extension url="reference">
+						<valueReference>
+							<reference value="http://hl7.org/fhir/ValueSet/referencerange-appliesto"/>
+						</valueReference>
+					</extension>
+					<extension url="version">
+						<valueString value="3.0.1"/>
+					</extension>
+				</extension>
+				<extension url="utilisedAsset">
+					<extension url="type">
+						<valueCode value="ValueSet"/>
+					</extension>
+					<extension url="reference">
+						<valueReference>
+							<reference value="http://hl7.org/fhir/ValueSet/observation-relationshiptypes"/>
 						</valueReference>
 					</extension>
 					<extension url="version">
@@ -1445,58 +1926,6 @@
 					</extension>
 					<extension url="reference">
 						<valueReference>
-							<reference value="https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-MedicationCode-1"/>
-						</valueReference>
-					</extension>
-					<extension url="version">
-						<valueString value="1.0.0"/>
-					</extension>
-				</extension>
-				<extension url="utilisedAsset">
-					<extension url="type">
-						<valueCode value="ValueSet"/>
-					</extension>
-					<extension url="reference">
-						<valueReference>
-							<reference value="http://hl7.org/fhir/ValueSet/medication-status"/>
-						</valueReference>
-					</extension>
-					<extension url="version">
-						<valueString value="3.0.1"/>
-					</extension>
-				</extension>
-				<extension url="utilisedAsset">
-					<extension url="type">
-						<valueCode value="ValueSet"/>
-					</extension>
-					<extension url="reference">
-						<valueReference>
-							<reference value="https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-MedicationForm-1"/>
-						</valueReference>
-					</extension>
-					<extension url="version">
-						<valueString value="1.0.0"/>
-					</extension>
-				</extension>
-				<extension url="utilisedAsset">
-					<extension url="type">
-						<valueCode value="ValueSet"/>
-					</extension>
-					<extension url="reference">
-						<valueReference>
-							<reference value="http://hl7.org/fhir/ValueSet/medication-package-form"/>
-						</valueReference>
-					</extension>
-					<extension url="version">
-						<valueString value="3.0.1"/>
-					</extension>
-				</extension>
-				<extension url="utilisedAsset">
-					<extension url="type">
-						<valueCode value="ValueSet"/>
-					</extension>
-					<extension url="reference">
-						<valueReference>
 							<reference value="http://hl7.org/fhir/ValueSet/device-kind"/>
 						</valueReference>
 					</extension>
@@ -1527,7 +1956,7 @@
 						</valueReference>
 					</extension>
 					<extension url="version">
-						<valueString value="1.0.0"/>
+						<valueString value="1.1.0"/>
 					</extension>
 				</extension>
 				<extension url="utilisedAsset">
@@ -1592,7 +2021,7 @@
 						</valueReference>
 					</extension>
 					<extension url="version">
-						<valueString value="1.0.0"/>
+						<valueString value="1.1.0"/>
 					</extension>
 				</extension>
 				<extension url="utilisedAsset">
@@ -1692,6 +2121,19 @@
 					</extension>
 					<extension url="reference">
 						<valueReference>
+							<reference value="https://fhir.nhs.uk/STU3/ValueSet/CareConnect-MedicationForm-1"/>
+						</valueReference>
+					</extension>
+					<extension url="version">
+						<valueString value="1.0.0"/>
+					</extension>
+				</extension>
+				<extension url="utilisedAsset">
+					<extension url="type">
+						<valueCode value="ValueSet"/>
+					</extension>
+					<extension url="reference">
+						<valueReference>
 							<reference value="http://hl7.org/fhir/ValueSet/document-relationship-type"/>
 						</valueReference>
 					</extension>
@@ -1709,20 +2151,7 @@
 						</valueReference>
 					</extension>
 					<extension url="version">
-						<valueString value="1.0.0"/>
-					</extension>
-				</extension>
-				<extension url="utilisedAsset">
-					<extension url="type">
-						<valueCode value="ValueSet"/>
-					</extension>
-					<extension url="reference">
-						<valueReference>
-							<reference value="http://hl7.org/fhir/ValueSet/narrative-status"/>
-						</valueReference>
-					</extension>
-					<extension url="version">
-						<valueString value="3.0.1"/>
+						<valueString value="1.1.0"/>
 					</extension>
 				</extension>
 				<extension url="utilisedAsset">
@@ -1770,24 +2199,11 @@
 					</extension>
 					<extension url="reference">
 						<valueReference>
-							<reference value="http://hl7.org/fhir/ValueSet/doc-section-codes"/>
-						</valueReference>
-					</extension>
-					<extension url="version">
-						<valueString value="3.0.1"/>
-					</extension>
-				</extension>
-				<extension url="utilisedAsset">
-					<extension url="type">
-						<valueCode value="ValueSet"/>
-					</extension>
-					<extension url="reference">
-						<valueReference>
 							<reference value="https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-CareSettingType-1"/>
 						</valueReference>
 					</extension>
 					<extension url="version">
-						<valueString value="1.0.0"/>
+						<valueString value="1.1.0"/>
 					</extension>
 				</extension>
 				<extension url="utilisedAsset">
@@ -1800,7 +2216,7 @@
 						</valueReference>
 					</extension>
 					<extension url="version">
-						<valueString value="1.0.0"/>
+						<valueString value="1.1.0"/>
 					</extension>
 				</extension>
 				<extension url="utilisedAsset">
@@ -1826,7 +2242,7 @@
 						</valueReference>
 					</extension>
 					<extension url="version">
-						<valueString value="1.0.0"/>
+						<valueString value="1.2.0"/>
 					</extension>
 				</extension>
 				<extension url="utilisedAsset">
@@ -1917,7 +2333,7 @@
 						</valueReference>
 					</extension>
 					<extension url="version">
-						<valueString value="1.0.0"/>
+						<valueString value="1.1.0"/>
 					</extension>
 				</extension>
 				<extension url="utilisedAsset">
@@ -1943,7 +2359,7 @@
 						</valueReference>
 					</extension>
 					<extension url="version">
-						<valueString value="1.0.0"/>
+						<valueString value="1.2.0"/>
 					</extension>
 				</extension>
 				<extension url="utilisedAsset">
@@ -1969,7 +2385,7 @@
 						</valueReference>
 					</extension>
 					<extension url="version">
-						<valueString value="1.0.0"/>
+						<valueString value="1.1.0"/>
 					</extension>
 				</extension>
 				<extension url="utilisedAsset">
@@ -1982,7 +2398,7 @@
 						</valueReference>
 					</extension>
 					<extension url="version">
-						<valueString value="1.0.0"/>
+						<valueString value="1.1.0"/>
 					</extension>
 				</extension>
 				<extension url="utilisedAsset">
@@ -1995,7 +2411,7 @@
 						</valueReference>
 					</extension>
 					<extension url="version">
-						<valueString value="1.0.0"/>
+						<valueString value="1.1.0"/>
 					</extension>
 				</extension>
 				<extension url="utilisedAsset">
@@ -2086,7 +2502,7 @@
 						</valueReference>
 					</extension>
 					<extension url="version">
-						<valueString value="2.0.0"/>
+						<valueString value="2.1.0"/>
 					</extension>
 				</extension>
 				<extension url="utilisedAsset">
@@ -2164,7 +2580,7 @@
 						</valueReference>
 					</extension>
 					<extension url="version">
-						<valueString value="1.0.0"/>
+						<valueString value="1.1.0"/>
 					</extension>
 				</extension>
 				<extension url="utilisedAsset">
@@ -2178,19 +2594,6 @@
 					</extension>
 					<extension url="version">
 						<valueString value="20091109"/>
-					</extension>
-				</extension>
-				<extension url="utilisedAsset">
-					<extension url="type">
-						<valueCode value="ValueSet"/>
-					</extension>
-					<extension url="reference">
-						<valueReference>
-							<reference value="http://hl7.org/fhir/ValueSet/days-of-week"/>
-						</valueReference>
-					</extension>
-					<extension url="version">
-						<valueString value="3.0.1"/>
 					</extension>
 				</extension>
 				<extension url="utilisedAsset">
@@ -2229,7 +2632,7 @@
 						</valueReference>
 					</extension>
 					<extension url="version">
-						<valueString value="1.0.0"/>
+						<valueString value="1.1.0"/>
 					</extension>
 				</extension>
 				<extension url="utilisedAsset">
@@ -2242,7 +2645,7 @@
 						</valueReference>
 					</extension>
 					<extension url="version">
-						<valueString value="1.0.0"/>
+						<valueString value="1.1.0"/>
 					</extension>
 				</extension>
 				<extension url="utilisedAsset">
@@ -2255,7 +2658,7 @@
 						</valueReference>
 					</extension>
 					<extension url="version">
-						<valueString value="1.0.0"/>
+						<valueString value="1.1.0"/>
 					</extension>
 				</extension>
 				<extension url="utilisedAsset">
@@ -2268,7 +2671,7 @@
 						</valueReference>
 					</extension>
 					<extension url="version">
-						<valueString value="1.0.0"/>
+						<valueString value="1.2.0"/>
 					</extension>
 				</extension>
 				<extension url="utilisedAsset">
@@ -2281,7 +2684,7 @@
 						</valueReference>
 					</extension>
 					<extension url="version">
-						<valueString value="1.0.0"/>
+						<valueString value="1.1.0"/>
 					</extension>
 				</extension>
 				<extension url="utilisedAsset">
@@ -2294,7 +2697,7 @@
 						</valueReference>
 					</extension>
 					<extension url="version">
-						<valueString value="1.0.0"/>
+						<valueString value="1.1.0"/>
 					</extension>
 				</extension>
 				<extension url="utilisedAsset">
@@ -2489,7 +2892,7 @@
 						</valueReference>
 					</extension>
 					<extension url="version">
-						<valueString value="1.0.0"/>
+						<valueString value="1.1.0"/>
 					</extension>
 				</extension>
 				<extension url="utilisedAsset">
@@ -2502,7 +2905,7 @@
 						</valueReference>
 					</extension>
 					<extension url="version">
-						<valueString value="1.0.0"/>
+						<valueString value="1.1.0"/>
 					</extension>
 				</extension>
 				<extension url="utilisedAsset">
@@ -2593,7 +2996,7 @@
 						</valueReference>
 					</extension>
 					<extension url="version">
-						<valueString value="1.0.0"/>
+						<valueString value="1.1.0"/>
 					</extension>
 				</extension>
 				<extension url="utilisedAsset">
@@ -2606,7 +3009,7 @@
 						</valueReference>
 					</extension>
 					<extension url="version">
-						<valueString value="1.0.0"/>
+						<valueString value="1.1.0"/>
 					</extension>
 				</extension>
 				<extension url="utilisedAsset">
@@ -2619,7 +3022,20 @@
 						</valueReference>
 					</extension>
 					<extension url="version">
-						<valueString value="1.0.0"/>
+						<valueString value="1.1.0"/>
+					</extension>
+				</extension>
+				<extension url="utilisedAsset">
+					<extension url="type">
+						<valueCode value="CodeSystem"/>
+					</extension>
+					<extension url="reference">
+						<valueReference>
+							<reference value="http://hl7.org/fhir/narrative-status"/>
+						</valueReference>
+					</extension>
+					<extension url="version">
+						<valueString value="3.0.1"/>
 					</extension>
 				</extension>
 				<extension url="utilisedAsset">
@@ -2710,7 +3126,7 @@
 						</valueReference>
 					</extension>
 					<extension url="version">
-						<valueString value="1.0.0"/>
+						<valueString value="1.1.0"/>
 					</extension>
 				</extension>
 				<extension url="utilisedAsset">
@@ -2736,7 +3152,7 @@
 						</valueReference>
 					</extension>
 					<extension url="version">
-						<valueString value="1.0.0"/>
+						<valueString value="1.1.0"/>
 					</extension>
 				</extension>
 				<extension url="utilisedAsset">
@@ -2745,7 +3161,59 @@
 					</extension>
 					<extension url="reference">
 						<valueReference>
-							<reference value="http://hl7.org/fhir/event-status"/>
+							<reference value="https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-PrescriptionType-1"/>
+						</valueReference>
+					</extension>
+					<extension url="version">
+						<valueString value="1.2.0"/>
+					</extension>
+				</extension>
+				<extension url="utilisedAsset">
+					<extension url="type">
+						<valueCode value="CodeSystem"/>
+					</extension>
+					<extension url="reference">
+						<valueReference>
+							<reference value="http://hl7.org/fhir/medication-request-status"/>
+						</valueReference>
+					</extension>
+					<extension url="version">
+						<valueString value="3.0.1"/>
+					</extension>
+				</extension>
+				<extension url="utilisedAsset">
+					<extension url="type">
+						<valueCode value="CodeSystem"/>
+					</extension>
+					<extension url="reference">
+						<valueReference>
+							<reference value="http://hl7.org/fhir/medication-request-intent"/>
+						</valueReference>
+					</extension>
+					<extension url="version">
+						<valueString value="3.0.1"/>
+					</extension>
+				</extension>
+				<extension url="utilisedAsset">
+					<extension url="type">
+						<valueCode value="CodeSystem"/>
+					</extension>
+					<extension url="reference">
+						<valueReference>
+							<reference value="http://hl7.org/fhir/medication-request-category"/>
+						</valueReference>
+					</extension>
+					<extension url="version">
+						<valueString value="3.0.1"/>
+					</extension>
+				</extension>
+				<extension url="utilisedAsset">
+					<extension url="type">
+						<valueCode value="CodeSystem"/>
+					</extension>
+					<extension url="reference">
+						<valueReference>
+							<reference value="http://hl7.org/fhir/medication-request-priority"/>
 						</valueReference>
 					</extension>
 					<extension url="version">
@@ -2784,6 +3252,162 @@
 					</extension>
 					<extension url="reference">
 						<valueReference>
+							<reference value="http://hl7.org/fhir/days-of-week"/>
+						</valueReference>
+					</extension>
+					<extension url="version">
+						<valueString value="3.0.1"/>
+					</extension>
+				</extension>
+				<extension url="utilisedAsset">
+					<extension url="type">
+						<valueCode value="CodeSystem"/>
+					</extension>
+					<extension url="reference">
+						<valueReference>
+							<reference value="http://hl7.org/fhir/event-timing"/>
+						</valueReference>
+					</extension>
+					<extension url="version">
+						<valueString value="3.0.1"/>
+					</extension>
+				</extension>
+				<extension url="utilisedAsset">
+					<extension url="type">
+						<valueCode value="CodeSystem"/>
+					</extension>
+					<extension url="reference">
+						<valueReference>
+							<reference value="http://hl7.org/fhir/v3/TimingEvent"/>
+						</valueReference>
+					</extension>
+					<extension url="version">
+						<valueString value="2016-11-11"/>
+					</extension>
+				</extension>
+				<extension url="utilisedAsset">
+					<extension url="type">
+						<valueCode value="CodeSystem"/>
+					</extension>
+					<extension url="reference">
+						<valueReference>
+							<reference value="http://hl7.org/fhir/v3/GTSAbbreviation"/>
+						</valueReference>
+					</extension>
+					<extension url="version">
+						<valueString value="2016-11-11"/>
+					</extension>
+				</extension>
+				<extension url="utilisedAsset">
+					<extension url="type">
+						<valueCode value="CodeSystem"/>
+					</extension>
+					<extension url="reference">
+						<valueReference>
+							<reference value="http://hl7.org/fhir/v3/ActReason"/>
+						</valueReference>
+					</extension>
+					<extension url="version">
+						<valueString value="2016-11-11"/>
+					</extension>
+				</extension>
+				<extension url="utilisedAsset">
+					<extension url="type">
+						<valueCode value="CodeSystem"/>
+					</extension>
+					<extension url="reference">
+						<valueReference>
+							<reference value="http://hl7.org/fhir/observation-status"/>
+						</valueReference>
+					</extension>
+					<extension url="version">
+						<valueString value="3.0.1"/>
+					</extension>
+				</extension>
+				<extension url="utilisedAsset">
+					<extension url="type">
+						<valueCode value="CodeSystem"/>
+					</extension>
+					<extension url="reference">
+						<valueReference>
+							<reference value="http://hl7.org/fhir/observation-category"/>
+						</valueReference>
+					</extension>
+					<extension url="version">
+						<valueString value="3.0.1"/>
+					</extension>
+				</extension>
+				<extension url="utilisedAsset">
+					<extension url="type">
+						<valueCode value="CodeSystem"/>
+					</extension>
+					<extension url="reference">
+						<valueReference>
+							<reference value="http://hl7.org/fhir/data-absent-reason"/>
+						</valueReference>
+					</extension>
+					<extension url="version">
+						<valueString value="3.0.1"/>
+					</extension>
+				</extension>
+				<extension url="utilisedAsset">
+					<extension url="type">
+						<valueCode value="CodeSystem"/>
+					</extension>
+					<extension url="reference">
+						<valueReference>
+							<reference value="http://hl7.org/fhir/v2/0078"/>
+						</valueReference>
+					</extension>
+					<extension url="version">
+						<valueString value="2.8.2"/>
+					</extension>
+				</extension>
+				<extension url="utilisedAsset">
+					<extension url="type">
+						<valueCode value="CodeSystem"/>
+					</extension>
+					<extension url="reference">
+						<valueReference>
+							<reference value="http://hl7.org/fhir/referencerange-meaning"/>
+						</valueReference>
+					</extension>
+					<extension url="version">
+						<valueString value="3.0.1"/>
+					</extension>
+				</extension>
+				<extension url="utilisedAsset">
+					<extension url="type">
+						<valueCode value="CodeSystem"/>
+					</extension>
+					<extension url="reference">
+						<valueReference>
+							<reference value="http://hl7.org/fhir/observation-relationshiptypes"/>
+						</valueReference>
+					</extension>
+					<extension url="version">
+						<valueString value="3.0.1"/>
+					</extension>
+				</extension>
+				<extension url="utilisedAsset">
+					<extension url="type">
+						<valueCode value="CodeSystem"/>
+					</extension>
+					<extension url="reference">
+						<valueReference>
+							<reference value="http://hl7.org/fhir/event-status"/>
+						</valueReference>
+					</extension>
+					<extension url="version">
+						<valueString value="3.0.1"/>
+					</extension>
+				</extension>
+				<extension url="utilisedAsset">
+					<extension url="type">
+						<valueCode value="CodeSystem"/>
+					</extension>
+					<extension url="reference">
+						<valueReference>
 							<reference value="http://hl7.org/fhir/diagnosis-role"/>
 						</valueReference>
 					</extension>
@@ -2801,7 +3425,7 @@
 						</valueReference>
 					</extension>
 					<extension url="version">
-						<valueString value="1.0.0"/>
+						<valueString value="1.1.0"/>
 					</extension>
 				</extension>
 				<extension url="utilisedAsset">
@@ -2866,7 +3490,7 @@
 						</valueReference>
 					</extension>
 					<extension url="version">
-						<valueString value="1.0.0"/>
+						<valueString value="1.1.0"/>
 					</extension>
 				</extension>
 				<extension url="utilisedAsset">
@@ -2927,19 +3551,6 @@
 					</extension>
 					<extension url="reference">
 						<valueReference>
-							<reference value="http://hl7.org/fhir/narrative-status"/>
-						</valueReference>
-					</extension>
-					<extension url="version">
-						<valueString value="3.0.1"/>
-					</extension>
-				</extension>
-				<extension url="utilisedAsset">
-					<extension url="type">
-						<valueCode value="CodeSystem"/>
-					</extension>
-					<extension url="reference">
-						<valueReference>
 							<reference value="http://hl7.org/fhir/list-mode"/>
 						</valueReference>
 					</extension>
@@ -2983,7 +3594,7 @@
 						</valueReference>
 					</extension>
 					<extension url="version">
-						<valueString value="1.0.0"/>
+						<valueString value="1.2.0"/>
 					</extension>
 				</extension>
 				<extension url="utilisedAsset">
@@ -3100,7 +3711,7 @@
 						</valueReference>
 					</extension>
 					<extension url="version">
-						<valueString value="1.0.0"/>
+						<valueString value="1.1.0"/>
 					</extension>
 				</extension>
 				<extension url="utilisedAsset">
@@ -3174,19 +3785,6 @@
 					</extension>
 					<extension url="reference">
 						<valueReference>
-							<reference value="http://hl7.org/fhir/v3/ActReason"/>
-						</valueReference>
-					</extension>
-					<extension url="version">
-						<valueString value="2016-11-11"/>
-					</extension>
-				</extension>
-				<extension url="utilisedAsset">
-					<extension url="type">
-						<valueCode value="CodeSystem"/>
-					</extension>
-					<extension url="reference">
-						<valueReference>
 							<reference value="http://hl7.org/fhir/vaccination-protocol-dose-status"/>
 						</valueReference>
 					</extension>
@@ -3230,20 +3828,7 @@
 						</valueReference>
 					</extension>
 					<extension url="version">
-						<valueString value="1.0.0"/>
-					</extension>
-				</extension>
-				<extension url="utilisedAsset">
-					<extension url="type">
-						<valueCode value="CodeSystem"/>
-					</extension>
-					<extension url="reference">
-						<valueReference>
-							<reference value="http://hl7.org/fhir/days-of-week"/>
-						</valueReference>
-					</extension>
-					<extension url="version">
-						<valueString value="3.0.1"/>
+						<valueString value="1.1.0"/>
 					</extension>
 				</extension>
 			</extension>
