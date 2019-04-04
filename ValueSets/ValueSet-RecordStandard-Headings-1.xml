@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+	<id value="RecordStandard-Headings-1"/>
+	<url value="https://fhir.nhs.uk/STU3/ValueSet/RecordStandards-Headings-1"/>
+	<version value="1.0.0"/>
+	<name value="Record Standards Headings"/>
+	<status value="draft"/>
+	<date value="2019-04-02T00:00:00+00:00"/>
+	<publisher value="NHS Digital"/>
+	<description value="A ValueSet to identify the record standard headings for the exchange of data."/>
+	<copyright value="Copyright © 2019 NHS Digital"/>
+	<compose>
+		<include>
+			<system value="https://fhir.nhs.uk/STU3/CodeSystem/RecordStandard-Headings-1"/>
+		</include>
+	</compose>
+</ValueSet>
+

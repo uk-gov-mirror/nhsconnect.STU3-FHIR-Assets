@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
-	<id value="RecordArtifactCode-1"/>
-	<url value="https://fhir.nhs.uk/STU3/CodeSystem/RecordArtifactCode-1"/>
+	<id value="RecordStandard-Headings-1"/>
+	<url value="https://fhir.nhs.uk/STU3/CodeSystem/RecordStandard-Headings-1"/>
 	<version value="1.0.0"/>
-	<name value="Record Artifact Code"/>
+	<name value="Record Standard Headings"/>
 	<status value="draft"/>
 	<date value="2019-04-02T00:00:00+00:00"/>
 	<publisher value="NHS Digital"/>
-	<description value="A CodeSystem to identify the record artifact code."/>
+	<description value="A CodeSystem to identify the record standard headings for the exchange of data."/>
 	<copyright value="Copyright © 2019 NHS Digital"/>
 	<caseSensitive value="true"/>
 	<content value="complete"/>
