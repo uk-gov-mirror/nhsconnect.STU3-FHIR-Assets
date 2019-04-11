@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Note the Bundle elements are included for validation pyurposes only and is not a complete Bundle structure-->
+<Bundle xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../Users/kzs/Desktop/fhir-all-xsd/bundle.xsd">
+	<type value="transaction"/>
+	<!-- The List resource entry-->
+	<entry>
+		<fullUrl value="urn:uuid:7875e6d6-4ede-11e9-8647-d663bd873d93"/>
+		<resource>
+			<List>
+				<id value="7875e6d6-4ede-11e9-8647-d663bd873d93"/>
+				<meta>
+					<profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-List-1"/>
+				</meta>
+				<identifier>
+					<system value="https://tools.ietf.org/html/rfc4122"/>
+					<value value="343b7c80-4edc-11e9-8647-d663bd873d93"/>
+				</identifier>
+				<status value="current"/>
+				<mode value="snapshot"/>
+				<title value="Admission details"/>
+				<code>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<code value="886781000000108"/>
+						<display value="Admission details"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:185e3f4c-4edd-11e9-8647-d663bd873d93"/>
+				</subject>
+				<date value="2019-02-17T12:00:00+00:00"/>
+				<entry>
+					<date value="2019-02-17T12:00:00+00:00"/>
+					<item>
+						<reference value="urn:uuid:185e3f4c-4edd-11e9-8647-d663bd873d93"/>
+					</item>
+				</entry>
+			</List>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl id="urn:uuid:b1fa47ee-4ede-11e9-8647-d663bd873d93"/>
+		<resource>
+			<!-- The Encounter resource entry -->
+			<Encounter>
+				<id value="b1fa47ee-4ede-11e9-8647-d663bd873d93"/>
+				<meta>
+					<profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-Encounter-1"/>
+				</meta>
+				<identifier>
+					<system value="https://tools.ietf.org/html/rfc4122"/>
+					<value value="347e073c-4edf-11e9-8647-d663bd873d93"/>
+				</identifier>
+				<status value="finished"/>
+				<participant>
+					<type>
+						<coding>
+							<system value="http://hl7.org/fhir/ValueSet/encounter-participant-type"/>
+							<code value="CON"/>
+							<display value="consultant"/>
+						</coding>
+					</type>
+					<individual>
+						<reference value="urn:uuid:c2a766ca-4edf-11e9-8647-d663bd873d93"/>
+					</individual>
+				</participant>
+				<participant>
+					<type>
+						<coding>
+							<system value="http://hl7.org/fhir/ValueSet/encounter-participant-type"/>
+							<code value="ESC"/>
+							<display value="escort"/>
+						</coding>
+					</type>
+					<individual>
+						<reference value="urn:uuid:309a30b8-4ee0-11e9-8647-d663bd873d93"/>
+					</individual>
+				</participant>
+				<period>
+					<start value="2019-02-17T11:00:00+00:00"/>
+				</period>
+				<reason>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<code value="21522001"/>
+						<display value="Abdominal pain"/>
+					</coding>
+				</reason>
+				<hospitalization>
+					<extension url="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-AdmissionMethod-1">
+						<valueCodeableConcept>
+							<coding>
+								<system value="https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-AdmissionMethod-1"/>
+								<code value="21"/>
+								<display value="Accident and emergency or dental casualty department of the Health Care Provider"/>
+							</coding>
+						</valueCodeableConcept>
+					</extension>
+					<admitSource>
+						<coding>
+							<system value="https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SourceOfAdmission-1"/>
+							<code value="29"/>
+							<display value="Temporary place of residence when usually resident elsewhere (e.g. hotels, residential Educational Establishments)"/>
+						</coding>
+					</admitSource>
+				</hospitalization>
+				<location>
+					<location>
+						<reference value="urn:uuid:4d5e68c4-4ee8-11e9-8647-d663bd873d93"/>
+					</location>
+				</location>
+			</Encounter>
+		</resource>
+	</entry>
+	<!-- The RelatedPerson resource entry -->
+	<entry>
+		<resource>
+			<RelatedPerson>
+				<id value="309a30b8-4ee0-11e9-8647-d663bd873d93"/>
+				<meta>
+					<profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-RelatedPerson-1"/>
+				</meta>
+				<patient>
+					<reference value="urn:uuid:185e3f4c-4edd-11e9-8647-d663bd873d93"/>
+				</patient>
+				<relationship>
+					<coding>
+						<system value="http://hl7.org/fhir/v3/RoleCode"/>
+						<code value="NMTH"/>
+						<display value="natural mother"/>
+					</coding>
+				</relationship>
+				<name>
+					<text value="Mrs Sarah Smith"/>
+					<family value="Smith"/>
+					<given value="Sarah"/>
+					<prefix value="Mrs"/>
+				</name>
+			</RelatedPerson>
+		</resource>
+	</entry>
+	<!-- The Practitioner resource entry -->
+	<entry>
+		<resource>
+			<Practitioner>
+				<id value="c2a766ca-4edf-11e9-8647-d663bd873d93"/>
+				<meta>
+					<profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-Practitioner-1"/>
+				</meta>
+				<identifier>
+					<system value="https://fhir.nhs.uk/Id/sds-user-id"/>
+					<value value="7123456"/>
+				</identifier>
+				<name>
+					<text value="Dr Thomas Jones"/>
+					<family value="Jones"/>
+					<given value="Thomas"/>
+					<prefix value="Dr"/>
+				</name>
+			</Practitioner>
+		</resource>
+	</entry>
+	<!-- The Location resource entry -->
+	<entry>
+		<resource>
+			<Location>
+				<id value="4d5e68c4-4ee8-11e9-8647-d663bd873d93"/>
+				<meta>
+					<profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-Location-1"/>
+				</meta>
+				<identifier>
+					<system value="https://fhir.nhs.uk/Id/ods-site-code"/>
+					<value value="YDD01"/>
+				</identifier>
+			</Location>
+		</resource>
+	</entry>
+</Bundle>

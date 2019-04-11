@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Note the Bundle elements are included for validation pyurposes only and is not a complete Bundle structure-->
+<Bundle xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../Users/kzs/Desktop/fhir-all-xsd/bundle.xsd">
+ <type value="transaction"/>
+ <!-- The List resource entry-->
+ <entry>
+  <fullUrl value="urn:uuid:7875e6d6-4ede-11e9-8647-d663bd873d93"/>
+  <resource>
+   <List>
+    <id value="7875e6d6-4ede-11e9-8647-d663bd873d93"/>
+    <meta>
+     <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-List-1"/>
+    </meta>
+    <identifier>
+     <system value="https://tools.ietf.org/html/rfc4122"/>
+     <value value="343b7c80-4edc-11e9-8647-d663bd873d93"/>
+    </identifier>
+    <status value="current"/>
+    <mode value="snapshot"/>
+    <title value="Patient demographics"/>
+    <code>
+     <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="886731000000109"/>
+      <display value="Patient demographics"/>
+     </coding>
+    </code>
+    <subject>
+     <reference value="urn:uuid:185e3f4c-4edd-11e9-8647-d663bd873d93"/>
+    </subject>
+    <date value="2019-02-17T12:00:00+00:00"/>
+    <entry>
+     <date value="2019-02-17T12:00:00+00:00"/>
+     <item>
+      <reference value="urn:uuid:185e3f4c-4edd-11e9-8647-d663bd873d93"/>
+     </item>
+    </entry>
+   </List>
+  </resource>
+ </entry>
+ <entry>
+  <fullUrl value="urn:uuid:185e3f4c-4edd-11e9-8647-d663bd873d93"/>
+  <resource>
+   <Patient>
+    <id value="185e3f4c-4edd-11e9-8647-d663bd873d93"/>
+    <meta>
+     <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1"/>
+    </meta>
+    <extension url="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-EthnicCategory-1">
+     <valueCodeableConcept>
+      <coding>
+       <system value="https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-EthnicCategory-1"/>
+       <code value="A"/>
+       <display value="British, Mixed British"/>
+      </coding>
+     </valueCodeableConcept>
+    </extension>
+    <extension url="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-ReligiousAffiliation-1">
+     <valueCodeableConcept>
+      <coding>
+       <system value="https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-ReligiousAffiliation-1"/>
+       <code value="344151000000101"/>
+       <display value="Follower of Church of England (person)"/>
+      </coding>
+     </valueCodeableConcept>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/birthPlace">
+     <valueAddress>
+      <text value="Exeter"/>
+     </valueAddress>
+    </extension>
+    <identifier>
+     <extension url="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1">
+      <valueCodeableConcept>
+       <coding>
+        <system value="https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-NHSNumberVerificationStatus-1"/>
+        <code value="01"/>
+        <display value="Number present and verified"/>
+       </coding>
+      </valueCodeableConcept>
+     </extension>
+     <system value="https://fhir.nhs.uk/Id/nhs-number"/>
+     <value value="1352465790"/>
+    </identifier>
+    <name>
+     <use value="official"/>
+     <text value="Mrs Racheal Smith"/>
+     <family value="Smith"/>
+     <given value="Racheal"/>
+     <prefix value="Mrs"/>
+    </name>
+    <telecom>
+     <system value="email"/>
+     <value value="1rsmith1@hot.com"/>
+     <use value="home"/>
+    </telecom>
+    <gender value="female"/>
+    <birthDate value="1957-01-01"/>
+    <address>
+     <line value="21, Grove Street, Overtown"/>
+     <city value="Leeds"/>
+     <postalCode value="LS21 1PF"/>
+    </address>
+    <maritalStatus>
+     <coding>
+      <system value="https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-MaritalStatus-1"/>
+      <code value="M"/>
+      <display value="Married"/>
+     </coding>
+    </maritalStatus>
+   </Patient>
+  </resource>
+ </entry>
+ <entry>
+  <fullUrl value="urn:uuid:a73b0a42-5171-11e9-8647-d663bd873d93"/>
+  <resource>
+   <Observation>
+    <id value="a73b0a42-5171-11e9-8647-d663bd873d93"/>
+    <meta>
+     <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-Observation-1"/>
+    </meta>
+    <status value="final"/>
+    <code>
+     <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="184100006"/>
+      <display value="Patient sex"/>
+     </coding>
+    </code>
+    <valueCodeableConcept>
+     <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="248152002"/>
+      <display value="female"/>
+     </coding>
+    </valueCodeableConcept>
+   </Observation>
+  </resource>
+ </entry>
+</Bundle>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Note the Bundle elements are included for validation purposes only and is not a complete Bundle structure-->
+<Bundle xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+ <type value="transaction"/>
+ <!-- The List resource entry-->
+ <entry>
+  <fullUrl value="urn:uuid:7df7012a-5c4f-11e9-8647-d663bd873d93"/>
+  <resource>
+   <List>
+    <id value="7df7012a-5c4f-11e9-8647-d663bd873d93"/>
+    <meta>
+     <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-List-1"/>
+    </meta>
+    <identifier>
+     <system value="https://tools.ietf.org/html/rfc4122"/>
+     <value value="a94696e2-5c4f-11e9-8647-d663bd873d93"/>
+    </identifier>
+    <status value="current"/>
+    <mode value="snapshot"/>
+    <title value="Allergies and adverse reactions"/>
+    <code>
+     <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="886921000000105"/>
+      <display value="Allergies and adverse reactions"/>
+     </coding>
+    </code>
+    <subject>
+     <reference value="urn:uuid:185e3f4c-4edd-11e9-8647-d663bd873d93"/>
+    </subject>
+    <date value="2019-02-17T12:00:00+00:00"/>
+    <entry>
+     <date value="2019-02-17T12:00:00+00:00"/>
+     <item>
+      <reference value="urn:uuid:185e3f4c-4edd-11e9-8647-d663bd873d93"/>
+     </item>
+    </entry>
+   </List>
+  </resource>
+ </entry>
+ <entry>
+  <fullUrl value="urn:uuid:185e3f4c-4edd-11e9-8647-d663bd873d93"/>
+  <resource>
+   <AllergyIntolerance>
+    <id value="185e3f4c-4edd-11e9-8647-d663bd873d93"/>
+    <meta>
+     <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-AllergyIntolerance-1"/>
+    </meta>
+    <identifier>
+     <system value="https://tools.ietf.org/html/rfc4122"/>
+     <value value="06d65f0f-117a-43c6-84ea-f28c3bd664a2"/>
+    </identifier>
+    <clinicalStatus value="active"/>
+    <verificationStatus value="confirmed"/>
+    <type value="allergy"/>
+    <category value="medication"/>
+    <code>
+     <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="373270004"/>
+      <display value="Penicillin -class of antibiotic-"/>
+     </coding>
+    </code>
+    <patient>
+     <reference value="urn:uuid:31686b67-9f20-4644-9a54-193d2f91de57"/>
+    </patient>
+    <onsetDateTime value="2012-01-12T12:00:00+00:00"/>
+    <assertedDate value="2012-01-12T12:00:00+00:00"/> 
+    <reaction>
+    <manifestation>
+     <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="271807003"/>
+      <display value="Eruption"/>
+     </coding>
+    </manifestation>
+    </reaction>
+   </AllergyIntolerance>
+  </resource>
+ </entry>
+</Bundle>
