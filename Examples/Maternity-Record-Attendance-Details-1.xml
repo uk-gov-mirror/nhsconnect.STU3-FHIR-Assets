@@ -44,13 +44,16 @@
    <Encounter>
     <id value="b3fe82a6-5c5a-11e9-8647-d663bd873d93"/>
     <meta>
-     <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-Encounter-1"/>     
+     <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-Encounter-1"/>
     </meta>
     <identifier>
      <system value="https://tools.ietf.org/html/rfc4122"/>
      <value value="cf4a57ac-5cfe-11e9-8647-d663bd873d93"/>
     </identifier>
     <status value="finished"/>
+    <episodeOfCare>
+     <reference value="urn:uuid:bd9cc59a-612b-11e9-8647-d663bd873d93"/>
+    </episodeOfCare>
     <period>
      <start value="2019-02-17T11:00:00+00:00"/>
     </period>
@@ -64,19 +67,36 @@
  </entry>
  <!-- The Location resource entry -->
  <entry>
+  <fullUrl value="urn:uuid:4d5e68c4-4ee8-11e9-8647-d663bd873d93"/>
   <resource>
    <Location>
     <id value="4d5e68c4-4ee8-11e9-8647-d663bd873d93"/>
     <meta>
      <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-Location-1"/>
     </meta>
-<type>
-<coding>
+    <type>
+     <coding>
       <system value="http://snomed.info/sct"/>
-<code value="Adolescent psychiatry service"/>
-</coding>
-</type>
+      <code value="828821000000105"/>
+      <display value="Adolescent psychiatry service"/>
+     </coding>
+    </type>
    </Location>
+  </resource>
+ </entry>
+ <entry>
+  <fullUrl value="urn:uuid:bd9cc59a-612b-11e9-8647-d663bd873d93"/>
+  <resource>
+   <EpisodeOfCare>
+    <id value="bd9cc59a-612b-11e9-8647-d663bd873d93"/>
+    <meta>
+     <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-EpisodeOfCare-1"/>
+    </meta>
+    <status value="finished"/>
+    <patient>
+     <reference value="urn:uuid:185e3f4c-4edd-11e9-8647-d663bd873d93"/>
+    </patient>
+   </EpisodeOfCare>
   </resource>
  </entry>
 </Bundle>
