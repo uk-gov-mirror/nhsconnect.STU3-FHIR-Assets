@@ -54,6 +54,30 @@
     <episodeOfCare>
      <reference value="urn:uuid:bd9cc59a-612b-11e9-8647-d663bd873d93"/>
     </episodeOfCare>
+    <participant>
+     <type>
+      <coding>
+       <system value="http://hl7.org/fhir/ValueSet/encounter-participant-type"/>
+       <code value="CON"/>
+       <display value="consultant"/>
+      </coding>
+     </type>
+     <individual>
+      <reference value="urn:uuid:c2a766ca-4edf-11e9-8647-d663bd873d93"/>
+     </individual>
+    </participant>
+    <participant>
+     <type>
+      <coding>
+       <system value="http://hl7.org/fhir/ValueSet/encounter-participant-type"/>
+       <code value="ESC"/>
+       <display value="escort"/>
+      </coding>
+     </type>
+     <individual>
+      <reference value="urn:uuid:309a30b8-4ee0-11e9-8647-d663bd873d93"/>
+     </individual>
+    </participant>
     <period>
      <start value="2019-02-17T11:00:00+00:00"/>
     </period>
@@ -84,6 +108,7 @@
    </Location>
   </resource>
  </entry>
+ <!-- The EpisodeOfCare resource entry -->
  <entry>
   <fullUrl value="urn:uuid:bd9cc59a-612b-11e9-8647-d663bd873d93"/>
   <resource>
@@ -93,10 +118,108 @@
      <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-EpisodeOfCare-1"/>
     </meta>
     <status value="finished"/>
+    <type>
+     <coding>
+      <system value="https://www.datadictionary.nhs.uk"/>
+      <code value="09"/>
+      <display value="Counselling Service"/>
+     </coding>
+    </type>
     <patient>
      <reference value="urn:uuid:185e3f4c-4edd-11e9-8647-d663bd873d93"/>
     </patient>
    </EpisodeOfCare>
+  </resource>
+ </entry>
+ <entry>
+  <fullUrl value="urn:uuid:1c0a64d6-612f-11e9-8647-d663bd873d93"/>
+  <resource>
+   <Communication>
+    <id value="1c0a64d6-612f-11e9-8647-d663bd873d93"/>
+    <status value="completed"/>
+    <medium>
+     <coding>
+      <system value="https://www.datadictionary.nhs.uk"/>
+      <code value="01"/>
+      <display value="Face to face communication"/>
+     </coding>
+    </medium>
+    <!-- reference to the encounter -->
+    <context>
+     <reference value="urn:uuid:b3fe82a6-5c5a-11e9-8647-d663bd873d93"/>
+    </context>
+   </Communication>
+  </resource>
+ </entry>
+ <!-- The RelatedPerson resource entry -->
+ <entry>
+  <fullUrl value="urn:uuid:309a30b8-4ee0-11e9-8647-d663bd873d93"/>
+  <resource>
+   <RelatedPerson>
+    <id value="309a30b8-4ee0-11e9-8647-d663bd873d93"/>
+    <meta>
+     <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-RelatedPerson-1"/>
+    </meta>
+    <patient>
+     <reference value="urn:uuid:185e3f4c-4edd-11e9-8647-d663bd873d93"/>
+    </patient>
+    <relationship>
+     <coding>
+      <system value="http://hl7.org/fhir/v3/RoleCode"/>
+      <code value="NMTH"/>
+      <display value="natural mother"/>
+     </coding>
+    </relationship>
+    <name>
+     <text value="Mrs Sarah Smith"/>
+     <family value="Smith"/>
+     <given value="Sarah"/>
+     <prefix value="Mrs"/>
+    </name>
+   </RelatedPerson>
+  </resource>
+ </entry>
+ <!-- The Practitioner resource entry -->
+ <entry>
+  <fullUrl value="urn:uuid:c2a766ca-4edf-11e9-8647-d663bd873d93"/>
+  <resource>
+   <Practitioner>
+    <id value="c2a766ca-4edf-11e9-8647-d663bd873d93"/>
+    <meta>
+     <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-Practitioner-1"/>
+    </meta>
+    <identifier>
+     <system value="https://fhir.nhs.uk/Id/sds-user-id"/>
+     <value value="7123456"/>
+    </identifier>
+    <name>
+     <text value="Dr Thomas Jones"/>
+     <family value="Jones"/>
+     <given value="Thomas"/>
+     <prefix value="Dr"/>
+    </name>
+   </Practitioner>
+  </resource>
+ </entry>
+ <entry>
+  <fullUrl value="urn:uuid:6ff1a0fe-6130-11e9-8647-d663bd873d93"/>
+  <resource>
+   <PractitionerRole>
+    <id value="6ff1a0fe-6130-11e9-8647-d663bd873d93"/>
+    <meta>
+     <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-PractitionerRole-1"/>
+    </meta>
+    <practitioner>
+     <reference value="urn:uuid:c2a766ca-4edf-11e9-8647-d663bd873d93"/>
+    </practitioner>
+    <code>
+     <coding>
+      <system value="https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"/>
+      <code value="R1981"/>
+      <display value="Psychiatrist"/>
+     </coding>
+    </code>
+   </PractitionerRole>
   </resource>
  </entry>
 </Bundle>
