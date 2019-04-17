@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Note the Bundle elements are included for validation pyurposes only and is not a complete Bundle structure-->
+<Bundle xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../Users/kzs/Desktop/fhir-all-xsd/bundle.xsd">
+ <type value="transaction"/>
+ <entry>
+  <fullUrl value="urn:uuid:5e5f3674-5c5a-11e9-8647-d663bd873d93"/>
+  <resource>
+   <List>
+    <id value="7875e6d6-4ede-11e9-8647-d663bd873d93"/>
+    <meta>
+     <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-List-1"/>
+    </meta>
+    <identifier>
+     <system value="https://tools.ietf.org/html/rfc4122"/>
+     <value value="5e5f3674-5c5a-11e9-8647-d663bd873d93"/>
+    </identifier>
+    <status value="current"/>
+    <mode value="snapshot"/>
+    <title value="Assessment scales"/>
+    <code>
+     <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="887141000000103"/>
+      <display value="Assessment scales"/>
+     </coding>
+    </code>
+    <subject>
+     <reference value="urn:uuid:185e3f4c-4edd-11e9-8647-d663bd873d93"/>
+    </subject>
+    <date value="2019-02-17T12:00:00+00:00"/>
+    <entry>
+     <date value="2019-02-17T12:00:00+00:00"/>
+     <item>
+      <reference value="urn:uuid:185e3f4c-4edd-11e9-8647-d663bd873d93"/>
+     </item>
+    </entry>
+   </List>
+  </resource>
+ </entry>
+ <entry>
+  <fullUrl id="urn:uuid:7079658c-5c5a-11e9-8647-d663bd873d93"/>
+  <resource>
+   <Observation>
+    <id value="7079658c-5c5a-11e9-8647-d663bd873d93"/>
+    <meta>
+     <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Observation-1"/>
+    </meta>
+    <status value="final"/>
+    <code>
+     <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="704501007"/>
+      <display value="GAD-7 - Generalised Anxiety Disorder 7"/>
+     </coding>
+    </code>
+    <context>
+     <reference value="b3fe82a6-5c5a-11e9-8647-d663bd873d93"/>
+    </context>
+    <effectiveDateTime value="2019-02-17T12:00:00+00:00"/>
+    <valueQuantity>
+     <value value="20"/>
+    </valueQuantity>
+   </Observation>
+  </resource>
+ </entry>
+ <entry>
+  <fullUrl id="urn:uuid:b3fe82a6-5c5a-11e9-8647-d663bd873d93"/>
+  <resource>
+   <!-- The Encounter resource entry -->
+   <Encounter>
+    <id value="b3fe82a6-5c5a-11e9-8647-d663bd873d93"/>
+    <meta>
+     <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-Encounter-1"/>     
+    </meta>
+    <identifier>
+     <system value="https://tools.ietf.org/html/rfc4122"/>
+     <value value="cf4a57ac-5cfe-11e9-8647-d663bd873d93"/>
+    </identifier>
+    <status value="finished"/>
+    <period>
+     <start value="2019-02-17T11:00:00+00:00"/>
+    </period>
+    <location>
+     <location>
+      <reference value="urn:uuid:4d5e68c4-4ee8-11e9-8647-d663bd873d93"/>
+     </location>
+    </location>
+   </Encounter>
+  </resource>
+ </entry>
+ <!-- The Location resource entry -->
+ <entry>
+  <resource>
+   <Location>
+    <id value="4d5e68c4-4ee8-11e9-8647-d663bd873d93"/>
+    <meta>
+     <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-Location-1"/>
+    </meta>
+    <identifier>
+     <system value="https://fhir.nhs.uk/Id/ods-site-code"/>
+     <value value="YDD01"/>
+    </identifier>
+   </Location>
+  </resource>
+ </entry>
+</Bundle>
