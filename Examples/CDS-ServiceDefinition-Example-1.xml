@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ServiceDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<id value="d16e6d37-854a-414c-9850-316e7b1e7ba9"/>
+	<meta>
+		<profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CDS-ServiceDefinition-1"/>
+	</meta>
+	<name value="scenario-6"/>
+	<title value="scenario-6"/>
+	<status value="active"/>
+	<experimental value="false"/>
+	<date value="2019-04-01T00:00:00+00:00"/>
+	<publisher value="NHS Digital"/>
+	<description value="Leg injury and Blunt trauma 1st Party"/>
+	<purpose value="To triage a patient who has a leg injury"/>
+	<usage value="To triage a patient who has a leg injury"/>
+	<approvalDate value="2019-04-01"/>
+	<lastReviewDate value="2019-04-01"/>
+	<effectivePeriod>
+		<start value="2019-01-01"/>
+		<end value="2019-12-31"/>
+	</effectivePeriod>
+	<!-- The usage for this service is for the 111 Call handler-->
+	<useContext>
+		<code>
+			<system value="http://hl7.org/fhir/usage-context-type"/>
+			<code value="user"/>
+			<display value="User Type"/>
+		</code>
+		<valueCodeableConcept>
+			<coding>
+				<system value="http://CDSS/Stub"/>
+				<code value="111CH"/>
+				<display value="111 Call Handler"/>
+				<userSelected value="false"/>
+			</coding>
+		</valueCodeableConcept>
+	</useContext>
+	<useContext>
+		<code>
+			<system value="http://hl7.org/fhir/usage-context-type"/>
+			<code value="user"/>
+			<display value="User Type"/>
+		</code>
+		<valueCodeableConcept>
+			<coding>
+				<system value="http://CDSS/Stub"/>
+				<code value="1"/>
+				<display value="1st Party"/>
+				<userSelected value="false"/>
+			</coding>
+		</valueCodeableConcept>
+	</useContext>
+	<jurisdiction>
+		<!--Using the Jurisdiction valueSet. Can use CDSS Supplier Stub-->
+		<coding>
+			<system value="urn:iso:std:iso:3166"/>
+			<code value="GB"/>
+			<display value="United Kingdom of Great Britain and Northern Ireland (the)"/>
+		</coding>
+	</jurisdiction>
+	<topic>
+		<coding>
+			<system value="cdss/supplier/stub"/>
+			<code value="TRI"/>
+			<display value="Triage"/>
+			<userSelected value="false"/>
+		</coding>
+	</topic>
+	<trigger>
+		<type value="data-added"/>
+		<eventData>
+			<type value="Observation"/>
+			<profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Observation-1"/>
+			<codeFilter>
+				<path value="code"/>
+				<valueCoding>
+					<system value="http://snomed.info/sct"/>
+					<code value="125602001"/>
+					<display value="Injury of lower leg (disorder)"/>
+				</valueCoding>
+			</codeFilter>
+		</eventData>
+	</trigger>
+	<dataRequirement>
+		<type value="Observation"/>
+		<profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-Observation-1"/>
+		<codeFilter>
+			<path value="code"/>
+			<valueCoding>
+				<system value="http://snomed.info/sct"/>
+				<code value="46866001"/>
+				<display value="Fracture of lower limb (disorder)"/>
+			</valueCoding>
+		</codeFilter>
+		<codeFilter>
+			<path value="code"/>
+			<valueCoding>
+				<system value="http://snomed.info/sct"/>
+				<code value="413876003"/>
+				<display value="Closed fracture of lower leg (disorder)"/>
+			</valueCoding>
+		</codeFilter>
+		<codeFilter>
+			<path value="code"/>
+			<valueCoding>
+				<system value="http://snomed.info/sct"/>
+				<code value="208732009"/>
+				<display value="Multiple fractures of lower leg (disorder)"/>
+			</valueCoding>
+		</codeFilter>
+	</dataRequirement>
+</ServiceDefinition>
