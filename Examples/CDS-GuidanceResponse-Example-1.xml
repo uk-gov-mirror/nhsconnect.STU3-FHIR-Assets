@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GuidanceResponse xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir file:///C:/Users/supa1/Desktop/STU3%20Schemas/guidanceresponse.xsd">
+<contained>
+	<Parameters>
+		
+	</Parameters>
+</contained>
+<requestId value="802185a7-87d9-474d-b572-8b6df2295136"/>
+	<module>
+		<reference value="ServiceDefinition/d16e6d37-854a-414c-9850-316e7b1e7ba9"/>
+	</module>
+	<status value="data-requested"/>
+	<subject>
+		<reference value="Patient/xxxx"/>
+	</subject>
+	<context>
+		<reference value="Encounter/dbe5ad79-75c6-48b7-96b8-7b7cf0afb009"/>
+	</context>
+	<occurrenceDateTime value="2019-05-09T12:40:00+00:00"/>
+	<!-- Leaving the outputParameters element as this example is of a first response-->
+	<dataRequirement>
+		<type value="Questionnaire"/>
+		<profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CDS-LegBreak-Questionnaire-1"/>
+	</dataRequirement>
+</GuidanceResponse>
