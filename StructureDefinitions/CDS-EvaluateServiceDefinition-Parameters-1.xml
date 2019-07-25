@@ -113,856 +113,6 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Parameters.meta.id">
-      <path value="Parameters.meta.id" />
-      <representation value="xmlAttr" />
-      <short value="xml:id (or equivalent in JSON)" />
-      <definition value="unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces." />
-      <comment value="Note that FHIR strings may not exceed 1MB in size" />
-      <min value="0" />
-      <max value="1" />
-      <base>
-        <path value="Element.id" />
-        <min value="0" />
-        <max value="1" />
-      </base>
-      <type>
-        <code value="string" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <expression value="hasValue() | (children().count() &gt; id.count())" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-    </element>
-    <element id="Parameters.meta.extension">
-      <path value="Parameters.meta.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <description value="Extensions are always sliced by (at least) url" />
-        <rules value="open" />
-      </slicing>
-      <short value="Additional Content defined by implementations" />
-      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." />
-      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
-      <alias value="extensions" />
-      <alias value="user content" />
-      <min value="0" />
-      <max value="*" />
-      <base>
-        <path value="Element.extension" />
-        <min value="0" />
-        <max value="*" />
-      </base>
-      <type>
-        <code value="Extension" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <expression value="hasValue() | (children().count() &gt; id.count())" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <constraint>
-        <key value="ext-1" />
-        <severity value="error" />
-        <human value="Must have either extensions or value[x], not both" />
-        <expression value="extension.exists() != value.exists()" />
-        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-      </constraint>
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value="N/A" />
-      </mapping>
-    </element>
-    <element id="Parameters.meta.versionId">
-      <path value="Parameters.meta.versionId" />
-      <short value="Version specific identifier" />
-      <definition value="The version specific identifier, as it appears in the version portion of the URL. This values changes when the resource is created, updated, or deleted." />
-      <comment value="The server assigns this value, and ignores what the client specifies, except in the case that the server is imposing version integrity on updates/deletes." />
-      <min value="0" />
-      <max value="1" />
-      <base>
-        <path value="Resource.meta.versionId" />
-        <min value="0" />
-        <max value="1" />
-      </base>
-      <type>
-        <code value="id" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <expression value="hasValue() | (children().count() &gt; id.count())" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <isSummary value="true" />
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-    </element>
-    <element id="Parameters.meta.lastUpdated">
-      <path value="Parameters.meta.lastUpdated" />
-      <short value="When the resource version last changed" />
-      <definition value="When the resource last changed - e.g. when the version changed." />
-      <comment value="This value is always populated except when the resource is first being created. The server / resource manager sets this value; what a client provides is irrelevant." />
-      <min value="0" />
-      <max value="1" />
-      <base>
-        <path value="Resource.meta.lastUpdated" />
-        <min value="0" />
-        <max value="1" />
-      </base>
-      <type>
-        <code value="instant" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <expression value="hasValue() | (children().count() &gt; id.count())" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <isSummary value="true" />
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-    </element>
-    <element id="Parameters.meta.profile">
-      <path value="Parameters.meta.profile" />
-      <short value="Profiles this resource claims to conform to" />
-      <definition value="A list of profiles (references to [StructureDefinition](structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url]()." />
-      <comment value="It is up to the server and/or other infrastructure of policy to determine whether/how these claims are verified and/or updated over time.  The list of profile URLs is a set." />
-      <min value="0" />
-      <max value="*" />
-      <base>
-        <path value="Resource.meta.profile" />
-        <min value="0" />
-        <max value="*" />
-      </base>
-      <type>
-        <code value="uri" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <expression value="hasValue() | (children().count() &gt; id.count())" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <isSummary value="true" />
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-    </element>
-    <element id="Parameters.meta.security">
-      <path value="Parameters.meta.security" />
-      <short value="Security Labels applied to this resource" />
-      <definition value="Security labels applied to this resource. These tags connect specific resources to the overall security policy and infrastructure." />
-      <comment value="The security labels can be updated without changing the stated version of the resource  The list of security labels is a set. Uniqueness is based the system/code, and version and display are ignored." />
-      <min value="0" />
-      <max value="*" />
-      <base>
-        <path value="Resource.meta.security" />
-        <min value="0" />
-        <max value="*" />
-      </base>
-      <type>
-        <code value="Coding" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <expression value="hasValue() | (children().count() &gt; id.count())" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <isSummary value="true" />
-      <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="SecurityLabels" />
-        </extension>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
-          <valueBoolean value="true" />
-        </extension>
-        <strength value="extensible" />
-        <description value="Security Labels from the Healthcare Privacy and Security Classification System." />
-        <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/security-labels" />
-        </valueSetReference>
-      </binding>
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="v2" />
-        <map value="CE/CNE/CWE subset one of the sets of component 1-3 or 4-6" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value="CV" />
-      </mapping>
-      <mapping>
-        <identity value="orim" />
-        <map value="fhir:Coding rdfs:subClassOf dt:CDCoding" />
-      </mapping>
-    </element>
-    <element id="Parameters.meta.security.id">
-      <path value="Parameters.meta.security.id" />
-      <representation value="xmlAttr" />
-      <short value="xml:id (or equivalent in JSON)" />
-      <definition value="unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces." />
-      <comment value="Note that FHIR strings may not exceed 1MB in size" />
-      <min value="0" />
-      <max value="1" />
-      <base>
-        <path value="Element.id" />
-        <min value="0" />
-        <max value="1" />
-      </base>
-      <type>
-        <code value="string" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <expression value="hasValue() | (children().count() &gt; id.count())" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-    </element>
-    <element id="Parameters.meta.security.extension">
-      <path value="Parameters.meta.security.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <description value="Extensions are always sliced by (at least) url" />
-        <rules value="open" />
-      </slicing>
-      <short value="Additional Content defined by implementations" />
-      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." />
-      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
-      <alias value="extensions" />
-      <alias value="user content" />
-      <min value="0" />
-      <max value="*" />
-      <base>
-        <path value="Element.extension" />
-        <min value="0" />
-        <max value="*" />
-      </base>
-      <type>
-        <code value="Extension" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <expression value="hasValue() | (children().count() &gt; id.count())" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <constraint>
-        <key value="ext-1" />
-        <severity value="error" />
-        <human value="Must have either extensions or value[x], not both" />
-        <expression value="extension.exists() != value.exists()" />
-        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-      </constraint>
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value="N/A" />
-      </mapping>
-    </element>
-    <element id="Parameters.meta.security.system">
-      <path value="Parameters.meta.security.system" />
-      <short value="Identity of the terminology system" />
-      <definition value="The identification of the code system that defines the meaning of the symbol in the code." />
-      <comment value="The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously." />
-      <requirements value="Need to be unambiguous about the source of the definition of the symbol." />
-      <min value="0" />
-      <max value="1" />
-      <base>
-        <path value="Coding.system" />
-        <min value="0" />
-        <max value="1" />
-      </base>
-      <type>
-        <code value="uri" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <expression value="hasValue() | (children().count() &gt; id.count())" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <isSummary value="true" />
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="v2" />
-        <map value="C*E.3" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value="./codeSystem" />
-      </mapping>
-      <mapping>
-        <identity value="orim" />
-        <map value="fhir:Coding.system rdfs:subPropertyOf dt:CDCoding.codeSystem" />
-      </mapping>
-    </element>
-    <element id="Parameters.meta.security.version">
-      <path value="Parameters.meta.security.version" />
-      <short value="Version of the system - if relevant" />
-      <definition value="The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged." />
-      <comment value="Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date." />
-      <min value="0" />
-      <max value="1" />
-      <base>
-        <path value="Coding.version" />
-        <min value="0" />
-        <max value="1" />
-      </base>
-      <type>
-        <code value="string" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <expression value="hasValue() | (children().count() &gt; id.count())" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <isSummary value="true" />
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="v2" />
-        <map value="C*E.7" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value="./codeSystemVersion" />
-      </mapping>
-      <mapping>
-        <identity value="orim" />
-        <map value="fhir:Coding.version rdfs:subPropertyOf dt:CDCoding.codeSystemVersion" />
-      </mapping>
-    </element>
-    <element id="Parameters.meta.security.code">
-      <path value="Parameters.meta.security.code" />
-      <short value="Symbol in syntax defined by the system" />
-      <definition value="A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination)." />
-      <comment value="Note that FHIR strings may not exceed 1MB in size" />
-      <requirements value="Need to refer to a particular code in the system." />
-      <min value="0" />
-      <max value="1" />
-      <base>
-        <path value="Coding.code" />
-        <min value="0" />
-        <max value="1" />
-      </base>
-      <type>
-        <code value="code" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <expression value="hasValue() | (children().count() &gt; id.count())" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <isSummary value="true" />
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="v2" />
-        <map value="C*E.1" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value="./code" />
-      </mapping>
-      <mapping>
-        <identity value="orim" />
-        <map value="fhir:Coding.code rdfs:subPropertyOf dt:CDCoding.code" />
-      </mapping>
-    </element>
-    <element id="Parameters.meta.security.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Parameters.meta.security.display" />
-      <short value="Representation defined by the system" />
-      <definition value="A representation of the meaning of the code in the system, following the rules of the system." />
-      <comment value="Note that FHIR strings may not exceed 1MB in size" />
-      <requirements value="Need to be able to carry a human-readable meaning of the code for readers that do not know  the system." />
-      <min value="0" />
-      <max value="1" />
-      <base>
-        <path value="Coding.display" />
-        <min value="0" />
-        <max value="1" />
-      </base>
-      <type>
-        <code value="string" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <expression value="hasValue() | (children().count() &gt; id.count())" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <isSummary value="true" />
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="v2" />
-        <map value="C*E.2 - but note this is not well followed" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value="CV.displayName" />
-      </mapping>
-      <mapping>
-        <identity value="orim" />
-        <map value="fhir:Coding.display rdfs:subPropertyOf dt:CDCoding.displayName" />
-      </mapping>
-    </element>
-    <element id="Parameters.meta.security.userSelected">
-      <path value="Parameters.meta.security.userSelected" />
-      <short value="If this coding was chosen directly by the user" />
-      <definition value="Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays)." />
-      <comment value="Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely." />
-      <requirements value="This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing." />
-      <min value="0" />
-      <max value="1" />
-      <base>
-        <path value="Coding.userSelected" />
-        <min value="0" />
-        <max value="1" />
-      </base>
-      <type>
-        <code value="boolean" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <expression value="hasValue() | (children().count() &gt; id.count())" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <isSummary value="true" />
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="v2" />
-        <map value="Sometimes implied by being first" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value="CD.codingRationale" />
-      </mapping>
-      <mapping>
-        <identity value="orim" />
-        <map value="fhir:Coding.userSelected fhir:mapsTo dt:CDCoding.codingRationale. fhir:Coding.userSelected fhir:hasMap fhir:Coding.userSelected.map. fhir:Coding.userSelected.map a fhir:Map;   fhir:target dt:CDCoding.codingRationale. fhir:Coding.userSelected\#true a [     fhir:source &quot;true&quot;;     fhir:target dt:CDCoding.codingRationale\#O   ]" />
-      </mapping>
-    </element>
-    <element id="Parameters.meta.tag">
-      <path value="Parameters.meta.tag" />
-      <short value="Tags applied to this resource" />
-      <definition value="Tags applied to this resource. Tags are intended to be used to identify and relate resources to process and workflow, and applications are not required to consider the tags when interpreting the meaning of a resource." />
-      <comment value="The tags can be updated without changing the stated version of the resource.  The list of tags is a set. Uniqueness is based the system/code, and version and display are ignored." />
-      <min value="0" />
-      <max value="*" />
-      <base>
-        <path value="Resource.meta.tag" />
-        <min value="0" />
-        <max value="*" />
-      </base>
-      <type>
-        <code value="Coding" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <expression value="hasValue() | (children().count() &gt; id.count())" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <isSummary value="true" />
-      <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="Tags" />
-        </extension>
-        <strength value="example" />
-        <description value="Codes that represent various types of tags, commonly workflow-related; e.g. &quot;Needs review by Dr. Jones&quot;" />
-        <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/common-tags" />
-        </valueSetReference>
-      </binding>
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="v2" />
-        <map value="CE/CNE/CWE subset one of the sets of component 1-3 or 4-6" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value="CV" />
-      </mapping>
-      <mapping>
-        <identity value="orim" />
-        <map value="fhir:Coding rdfs:subClassOf dt:CDCoding" />
-      </mapping>
-    </element>
-    <element id="Parameters.meta.tag.id">
-      <path value="Parameters.meta.tag.id" />
-      <representation value="xmlAttr" />
-      <short value="xml:id (or equivalent in JSON)" />
-      <definition value="unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces." />
-      <comment value="Note that FHIR strings may not exceed 1MB in size" />
-      <min value="0" />
-      <max value="1" />
-      <base>
-        <path value="Element.id" />
-        <min value="0" />
-        <max value="1" />
-      </base>
-      <type>
-        <code value="string" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <expression value="hasValue() | (children().count() &gt; id.count())" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-    </element>
-    <element id="Parameters.meta.tag.extension">
-      <path value="Parameters.meta.tag.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <description value="Extensions are always sliced by (at least) url" />
-        <rules value="open" />
-      </slicing>
-      <short value="Additional Content defined by implementations" />
-      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." />
-      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
-      <alias value="extensions" />
-      <alias value="user content" />
-      <min value="0" />
-      <max value="*" />
-      <base>
-        <path value="Element.extension" />
-        <min value="0" />
-        <max value="*" />
-      </base>
-      <type>
-        <code value="Extension" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <expression value="hasValue() | (children().count() &gt; id.count())" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <constraint>
-        <key value="ext-1" />
-        <severity value="error" />
-        <human value="Must have either extensions or value[x], not both" />
-        <expression value="extension.exists() != value.exists()" />
-        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-      </constraint>
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value="N/A" />
-      </mapping>
-    </element>
-    <element id="Parameters.meta.tag.system">
-      <path value="Parameters.meta.tag.system" />
-      <short value="Identity of the terminology system" />
-      <definition value="The identification of the code system that defines the meaning of the symbol in the code." />
-      <comment value="The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously." />
-      <requirements value="Need to be unambiguous about the source of the definition of the symbol." />
-      <min value="0" />
-      <max value="1" />
-      <base>
-        <path value="Coding.system" />
-        <min value="0" />
-        <max value="1" />
-      </base>
-      <type>
-        <code value="uri" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <expression value="hasValue() | (children().count() &gt; id.count())" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <isSummary value="true" />
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="v2" />
-        <map value="C*E.3" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value="./codeSystem" />
-      </mapping>
-      <mapping>
-        <identity value="orim" />
-        <map value="fhir:Coding.system rdfs:subPropertyOf dt:CDCoding.codeSystem" />
-      </mapping>
-    </element>
-    <element id="Parameters.meta.tag.version">
-      <path value="Parameters.meta.tag.version" />
-      <short value="Version of the system - if relevant" />
-      <definition value="The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged." />
-      <comment value="Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date." />
-      <min value="0" />
-      <max value="1" />
-      <base>
-        <path value="Coding.version" />
-        <min value="0" />
-        <max value="1" />
-      </base>
-      <type>
-        <code value="string" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <expression value="hasValue() | (children().count() &gt; id.count())" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <isSummary value="true" />
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="v2" />
-        <map value="C*E.7" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value="./codeSystemVersion" />
-      </mapping>
-      <mapping>
-        <identity value="orim" />
-        <map value="fhir:Coding.version rdfs:subPropertyOf dt:CDCoding.codeSystemVersion" />
-      </mapping>
-    </element>
-    <element id="Parameters.meta.tag.code">
-      <path value="Parameters.meta.tag.code" />
-      <short value="Symbol in syntax defined by the system" />
-      <definition value="A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination)." />
-      <comment value="Note that FHIR strings may not exceed 1MB in size" />
-      <requirements value="Need to refer to a particular code in the system." />
-      <min value="0" />
-      <max value="1" />
-      <base>
-        <path value="Coding.code" />
-        <min value="0" />
-        <max value="1" />
-      </base>
-      <type>
-        <code value="code" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <expression value="hasValue() | (children().count() &gt; id.count())" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <isSummary value="true" />
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="v2" />
-        <map value="C*E.1" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value="./code" />
-      </mapping>
-      <mapping>
-        <identity value="orim" />
-        <map value="fhir:Coding.code rdfs:subPropertyOf dt:CDCoding.code" />
-      </mapping>
-    </element>
-    <element id="Parameters.meta.tag.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Parameters.meta.tag.display" />
-      <short value="Representation defined by the system" />
-      <definition value="A representation of the meaning of the code in the system, following the rules of the system." />
-      <comment value="Note that FHIR strings may not exceed 1MB in size" />
-      <requirements value="Need to be able to carry a human-readable meaning of the code for readers that do not know  the system." />
-      <min value="0" />
-      <max value="1" />
-      <base>
-        <path value="Coding.display" />
-        <min value="0" />
-        <max value="1" />
-      </base>
-      <type>
-        <code value="string" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <expression value="hasValue() | (children().count() &gt; id.count())" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <isSummary value="true" />
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="v2" />
-        <map value="C*E.2 - but note this is not well followed" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value="CV.displayName" />
-      </mapping>
-      <mapping>
-        <identity value="orim" />
-        <map value="fhir:Coding.display rdfs:subPropertyOf dt:CDCoding.displayName" />
-      </mapping>
-    </element>
-    <element id="Parameters.meta.tag.userSelected">
-      <path value="Parameters.meta.tag.userSelected" />
-      <short value="If this coding was chosen directly by the user" />
-      <definition value="Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays)." />
-      <comment value="Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely." />
-      <requirements value="This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing." />
-      <min value="0" />
-      <max value="1" />
-      <base>
-        <path value="Coding.userSelected" />
-        <min value="0" />
-        <max value="1" />
-      </base>
-      <type>
-        <code value="boolean" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <expression value="hasValue() | (children().count() &gt; id.count())" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <isSummary value="true" />
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="v2" />
-        <map value="Sometimes implied by being first" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value="CD.codingRationale" />
-      </mapping>
-      <mapping>
-        <identity value="orim" />
-        <map value="fhir:Coding.userSelected fhir:mapsTo dt:CDCoding.codingRationale. fhir:Coding.userSelected fhir:hasMap fhir:Coding.userSelected.map. fhir:Coding.userSelected.map a fhir:Map;   fhir:target dt:CDCoding.codingRationale. fhir:Coding.userSelected\#true a [     fhir:source &quot;true&quot;;     fhir:target dt:CDCoding.codingRationale\#O   ]" />
-      </mapping>
-    </element>
     <element id="Parameters.implicitRules">
       <path value="Parameters.implicitRules" />
       <short value="A set of rules under which this content was created" />
@@ -1413,7 +563,7 @@
       <path value="Parameters.parameter" />
       <sliceName value="requestId" />
       <short value="An optional client-provided identifier to track the request." />
-      <definition value="An optional client-provided identifier to track the request." />
+      <definition value="MUST be provided by the EMS. This id MUST be persisted through a patient journey." />
       <min value="0" />
       <max value="1" />
       <base>
@@ -1597,7 +747,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="Parameters.parameter:requestId.value[x]:valueId">
+    <element id="Parameters.parameter:requestId.valueId:valueId">
       <path value="Parameters.parameter.valueId" />
       <sliceName value="valueId" />
       <short value="If parameter is a data type" />
@@ -1664,266 +814,11 @@
       <contentReference value="#Parameters.parameter" />
       <isSummary value="true" />
     </element>
-    <element id="Parameters.parameter:evaluateAtDateTime">
-      <path value="Parameters.parameter" />
-      <sliceName value="evaluateAtDateTime" />
-      <short value="An optional date and time specifying that the evaluation should be performed as though it was the given date and time." />
-      <definition value="The most direct implication of this is that references to &quot;Now&quot; within the evaluation logic of the module should result in this value. In addition, wherever possible, the data accessed by the module should appear as though it was accessed at this time. The evaluateAtDateTime value may be any time in the past or future, enabling both retrospective and prospective scenarios. If no value is provided, the date and time of the request is assumed." />
-      <min value="0" />
-      <max value="1" />
-      <base>
-        <path value="Parameters.parameter" />
-        <min value="0" />
-        <max value="*" />
-      </base>
-      <type>
-        <code value="BackboneElement" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <expression value="hasValue() | (children().count() &gt; id.count())" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <constraint>
-        <key value="inv-1" />
-        <severity value="error" />
-        <human value="A parameter must have only one of (value, resource, part)" />
-        <expression value="(part.exists() and value.empty() and resource.empty()) or (part.empty() and (value.exists() xor resource.exists()))" />
-        <xpath value="exists(f:value) or exists(f:resource) and not(exists(f:value) and exists(f:resource))" />
-      </constraint>
-      <isSummary value="true" />
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-    </element>
-    <element id="Parameters.parameter:evaluateAtDateTime.id">
-      <path value="Parameters.parameter.id" />
-      <representation value="xmlAttr" />
-      <short value="xml:id (or equivalent in JSON)" />
-      <definition value="unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces." />
-      <comment value="Note that FHIR strings may not exceed 1MB in size" />
-      <min value="0" />
-      <max value="1" />
-      <base>
-        <path value="Element.id" />
-        <min value="0" />
-        <max value="1" />
-      </base>
-      <type>
-        <code value="string" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <expression value="hasValue() | (children().count() &gt; id.count())" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-    </element>
-    <element id="Parameters.parameter:evaluateAtDateTime.extension">
-      <path value="Parameters.parameter.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <description value="Extensions are always sliced by (at least) url" />
-        <rules value="open" />
-      </slicing>
-      <short value="Additional Content defined by implementations" />
-      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." />
-      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
-      <alias value="extensions" />
-      <alias value="user content" />
-      <min value="0" />
-      <max value="*" />
-      <base>
-        <path value="Element.extension" />
-        <min value="0" />
-        <max value="*" />
-      </base>
-      <type>
-        <code value="Extension" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <expression value="hasValue() | (children().count() &gt; id.count())" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <constraint>
-        <key value="ext-1" />
-        <severity value="error" />
-        <human value="Must have either extensions or value[x], not both" />
-        <expression value="extension.exists() != value.exists()" />
-        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-      </constraint>
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value="N/A" />
-      </mapping>
-    </element>
-    <element id="Parameters.parameter:evaluateAtDateTime.modifierExtension">
-      <path value="Parameters.parameter.modifierExtension" />
-      <short value="Extensions that cannot be ignored" />
-      <definition value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions." />
-      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
-      <alias value="extensions" />
-      <alias value="user content" />
-      <alias value="modifiers" />
-      <min value="0" />
-      <max value="*" />
-      <base>
-        <path value="BackboneElement.modifierExtension" />
-        <min value="0" />
-        <max value="*" />
-      </base>
-      <type>
-        <code value="Extension" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <expression value="hasValue() | (children().count() &gt; id.count())" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <constraint>
-        <key value="ext-1" />
-        <severity value="error" />
-        <human value="Must have either extensions or value[x], not both" />
-        <expression value="extension.exists() != value.exists()" />
-        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-      </constraint>
-      <isModifier value="true" />
-      <isSummary value="true" />
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value="N/A" />
-      </mapping>
-    </element>
-    <element id="Parameters.parameter:evaluateAtDateTime.name">
-      <path value="Parameters.parameter.name" />
-      <short value="Name from the definition" />
-      <definition value="The name of the parameter (reference to the operation definition)." />
-      <comment value="Note that FHIR strings may not exceed 1MB in size" />
-      <min value="1" />
-      <max value="1" />
-      <base>
-        <path value="Parameters.parameter.name" />
-        <min value="1" />
-        <max value="1" />
-      </base>
-      <type>
-        <code value="string" />
-      </type>
-      <fixedString value="evaluateAtDateTime" />
-      <condition value="ele-1" />
-      <constraint>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <expression value="hasValue() | (children().count() &gt; id.count())" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <isSummary value="true" />
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-    </element>
-    <element id="Parameters.parameter:evaluateAtDateTime.value[x]:valueDateTime">
-      <path value="Parameters.parameter.valueDateTime" />
-      <sliceName value="valueDateTime" />
-      <short value="If parameter is a data type" />
-      <definition value="If the parameter is a data type." />
-      <comment value="A stream of bytes, base64 encoded" />
-      <min value="0" />
-      <max value="1" />
-      <base>
-        <path value="Parameters.parameter.value[x]" />
-        <min value="0" />
-        <max value="1" />
-      </base>
-      <type>
-        <code value="dateTime" />
-      </type>
-      <condition value="ele-1" />
-      <condition value="inv-1" />
-      <constraint>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <expression value="hasValue() | (children().count() &gt; id.count())" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <isSummary value="true" />
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-    </element>
-    <element id="Parameters.parameter:evaluateAtDateTime.resource">
-      <path value="Parameters.parameter.resource" />
-      <short value="If parameter is a whole resource" />
-      <definition value="If the parameter is a whole resource." />
-      <min value="0" />
-      <max value="0" />
-      <base>
-        <path value="Parameters.parameter.resource" />
-        <min value="0" />
-        <max value="1" />
-      </base>
-      <type>
-        <code value="Resource" />
-      </type>
-      <condition value="inv-1" />
-      <isSummary value="true" />
-      <mapping>
-        <identity value="rim" />
-        <map value="Entity. Role, or Act" />
-      </mapping>
-    </element>
-    <element id="Parameters.parameter:evaluateAtDateTime.part">
-      <path value="Parameters.parameter.part" />
-      <short value="Named part of a multi-part parameter" />
-      <definition value="A named part of a multi-part parameter." />
-      <comment value="Only one level of nested parameters is allowed." />
-      <min value="0" />
-      <max value="0" />
-      <base>
-        <path value="Parameters.parameter.part" />
-        <min value="0" />
-        <max value="*" />
-      </base>
-      <contentReference value="#Parameters.parameter" />
-      <isSummary value="true" />
-    </element>
     <element id="Parameters.parameter:inputParameters">
       <path value="Parameters.parameter" />
       <sliceName value="inputParameters" />
-      <short value="The input parameters for a request, if any." />
-      <definition value="These parameters are defined by the module that is the target of the evaluation, and typically supply patient-independent information to the module." />
+      <short value="These will be determined by the EMS and CDSS specific to each implementation." />
+      <definition value="A parameter passed to or received from the operation." />
       <min value="0" />
       <max value="1" />
       <base>
@@ -2288,7 +1183,7 @@
       <path value="Parameters.parameter" />
       <sliceName value="inputData" />
       <short value="The input data for the request." />
-      <definition value="These data are defined by the data requirements of the module and typically provide patient-dependent information." />
+      <definition value="The inputData element MUST be populated with FHIR resources detailing the current state of the triage journey." />
       <min value="0" />
       <max value="*" />
       <base>
@@ -2653,7 +1548,7 @@
       <path value="Parameters.parameter" />
       <sliceName value="patient" />
       <short value="The patient in context, if any." />
-      <definition value="The patient in context, if any." />
+      <definition value="This MUST be populated with a reference to a Patient resource." />
       <min value="0" />
       <max value="1" />
       <base>
@@ -3018,7 +1913,7 @@
       <path value="Parameters.parameter" />
       <sliceName value="encounter" />
       <short value="The encounter in context, if any." />
-      <definition value="The encounter in context, if any." />
+      <definition value="This MUST be populated by the EMS with the logical Id of the Encounter." />
       <min value="0" />
       <max value="1" />
       <base>
@@ -3383,7 +2278,7 @@
       <path value="Parameters.parameter" />
       <sliceName value="initiatingOrganization" />
       <short value="The organization initiating the request." />
-      <definition value="The organization initiating the request." />
+      <definition value="This SHOULD be populated by the EMS using the logical Id for the UEC service provider. Note that this is the same as the receivingOrganization. If this is an online (patient facing) system, then this MUST NOT be populated." />
       <min value="0" />
       <max value="1" />
       <base>
@@ -3748,7 +2643,7 @@
       <path value="Parameters.parameter" />
       <sliceName value="initiatingPerson" />
       <short value="The person initiating the request." />
-      <definition value="The person initiating the request." />
+      <definition value="This MUST be populated by the EMS. The initiatingPerson is the user of the EMS. This will typically be a Patient or RelatedPerson if the EMS is being used by a member of the public (e.g. a patient-facing public internet system) or a Practitioner where initiatingOrganisation is populated. Note that this is the same as the receivingPerson." />
       <min value="0" />
       <max value="1" />
       <base>
@@ -4116,7 +3011,7 @@
       <path value="Parameters.parameter" />
       <sliceName value="userType" />
       <short value="The type of user initiating the request" />
-      <definition value="The type of user initiating the request, e.g. patient, healthcare provider, or specific type of healthcare provider (physician, nurse, etc.)." />
+      <definition value="The userType parameter of note MUST be provided by the EMS. If the userType is patient, then the CDSS SHOULD use first person pronouns." />
       <min value="0" />
       <max value="1" />
       <base>
@@ -4300,7 +3195,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="Parameters.parameter:userType.value[x]:valueCodeableConcept">
+    <element id="Parameters.parameter:userType.valueCodeableConcept:valueCodeableConcept">
       <path value="Parameters.parameter.valueCodeableConcept" />
       <sliceName value="valueCodeableConcept" />
       <short value="If parameter is a data type" />
@@ -4371,7 +3266,7 @@
       <path value="Parameters.parameter" />
       <sliceName value="userLanguage" />
       <short value="Preferred language of the person using the system." />
-      <definition value="Preferred language of the person using the system." />
+      <definition value="This SHOULD be provided by the EMS, based on the user requirements." />
       <min value="0" />
       <max value="1" />
       <base>
@@ -4555,7 +3450,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="Parameters.parameter:userLanguage.value[x]:valueCodeableConcept">
+    <element id="Parameters.parameter:userLanguage.valueCodeableConcept:valueCodeableConcept">
       <path value="Parameters.parameter.valueCodeableConcept" />
       <sliceName value="valueCodeableConcept" />
       <short value="If parameter is a data type" />
@@ -4626,7 +3521,7 @@
       <path value="Parameters.parameter" />
       <sliceName value="userTaskContext" />
       <short value="The task the system user is performing." />
-      <definition value="The task the system user is performing, e.g. laboratory results review, medication list review, etc. This information can be used to tailor decision support outputs, such as recommended information resources." />
+      <definition value="This SHOULD be provided by the EMS, as it may be used to tailor decision support outputs." />
       <min value="0" />
       <max value="1" />
       <base>
@@ -4810,7 +3705,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="Parameters.parameter:userTaskContext.value[x]:valueCodeableConcept">
+    <element id="Parameters.parameter:userTaskContext.valueCodeableConcept:valueCodeableConcept">
       <path value="Parameters.parameter.valueCodeableConcept" />
       <sliceName value="valueCodeableConcept" />
       <short value="If parameter is a data type" />
@@ -4881,7 +3776,7 @@
       <path value="Parameters.parameter" />
       <sliceName value="receivingOrganization" />
       <short value="The organization that will receive the response." />
-      <definition value="The organization that will receive the response." />
+      <definition value="This SHOULD be populated with the organisation identifier for the UEC service provider. If this is an online (patient facing) system, then this MUST NOT be populated. Note that this is the same as the initiatingOrganisation." />
       <min value="0" />
       <max value="1" />
       <base>
@@ -5246,7 +4141,7 @@
       <path value="Parameters.parameter" />
       <sliceName value="receivingPerson" />
       <short value="The person in the receiving organization that will receive the response." />
-      <definition value="The person in the receiving organization that will receive the response." />
+      <definition value="This MUST be populated by the EMS, based on the user. In the case of an online (patient-facing) system, this may be Patient or RelatedPerson. Note that this is the same as the initiatingPerson." />
       <min value="0" />
       <max value="1" />
       <base>
@@ -5611,7 +4506,7 @@
       <path value="Parameters.parameter" />
       <sliceName value="recipientType" />
       <short value="The type of individual that will consume the response content." />
-      <definition value="The type of individual that will consume the response content. This may be different from the requesting user type (e.g. if a clinician is getting disease management guidance for provision to a patient). E.g. patient, healthcare provider or specific type of healthcare provider (physician, nurse, etc.)." />
+      <definition value="This will be the patient (or a related person, if telephoning on behalf of the patient)." />
       <min value="0" />
       <max value="1" />
       <base>
@@ -5795,7 +4690,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="Parameters.parameter:recipientType.value[x]:valueCodeableConcept">
+    <element id="Parameters.parameter:recipientType.valueCodeableConcept:valueCodeableConcept">
       <path value="Parameters.parameter.valueCodeableConcept" />
       <sliceName value="valueCodeableConcept" />
       <short value="If parameter is a data type" />
@@ -5866,7 +4761,7 @@
       <path value="Parameters.parameter" />
       <sliceName value="recipientLanguage" />
       <short value="Preferred language of the person that will consume the content." />
-      <definition value="Preferred language of the person that will consume the content." />
+      <definition value="This SHOULD be populated by the EMS where known for the recipient and will be populated with the same value as contained in the userLanguage parameter." />
       <min value="0" />
       <max value="1" />
       <base>
@@ -6050,7 +4945,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="Parameters.parameter:recipientLanguage.value[x]:valueCodeableConcept">
+    <element id="Parameters.parameter:recipientLanguage.valueCodeableConcept:valueCodeableConcept">
       <path value="Parameters.parameter.valueCodeableConcept" />
       <sliceName value="valueCodeableConcept" />
       <short value="If parameter is a data type" />
@@ -6121,7 +5016,7 @@
       <path value="Parameters.parameter" />
       <sliceName value="setting" />
       <short value="The current setting of the request (inpatient, outpatient, etc)." />
-      <definition value="The current setting of the request (inpatient, outpatient, etc)." />
+      <definition value="This MUST be provided by the EMS to give context for decision support." />
       <min value="0" />
       <max value="1" />
       <base>
@@ -6305,7 +5200,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="Parameters.parameter:setting.value[x]:valueCodeableConcept">
+    <element id="Parameters.parameter:setting.valueCodeableConcept:valueCodeableConcept">
       <path value="Parameters.parameter.valueCodeableConcept" />
       <sliceName value="valueCodeableConcept" />
       <short value="If parameter is a data type" />
@@ -6560,7 +5455,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="Parameters.parameter:settingContext.value[x]:valueCodeableConcept">
+    <element id="Parameters.parameter:settingContext.valueCodeableConcept:valueCodeableConcept">
       <path value="Parameters.parameter.valueCodeableConcept" />
       <sliceName value="valueCodeableConcept" />
       <short value="If parameter is a data type" />
@@ -6643,7 +5538,7 @@
       <path value="Parameters.parameter" />
       <sliceName value="requestId" />
       <short value="An optional client-provided identifier to track the request." />
-      <definition value="An optional client-provided identifier to track the request." />
+      <definition value="MUST be provided by the EMS. This id MUST be persisted through a patient journey." />
       <max value="1" />
     </element>
     <element id="Parameters.parameter:requestId.name">
@@ -6652,7 +5547,7 @@
       <definition value="An optional client-provided identifier to track the request." />
       <fixedString value="requestId" />
     </element>
-    <element id="Parameters.parameter:requestId.value[x]:valueId">
+    <element id="Parameters.parameter:requestId.valueId:valueId">
       <path value="Parameters.parameter.valueId" />
       <sliceName value="valueId" />
       <type>
@@ -6667,37 +5562,10 @@
       <path value="Parameters.parameter.part" />
       <max value="0" />
     </element>
-    <element id="Parameters.parameter:evaluateAtDateTime">
-      <path value="Parameters.parameter" />
-      <sliceName value="evaluateAtDateTime" />
-      <short value="An optional date and time specifying that the evaluation should be performed as though it was the given date and time." />
-      <definition value="The most direct implication of this is that references to &quot;Now&quot; within the evaluation logic of the module should result in this value. In addition, wherever possible, the data accessed by the module should appear as though it was accessed at this time. The evaluateAtDateTime value may be any time in the past or future, enabling both retrospective and prospective scenarios. If no value is provided, the date and time of the request is assumed." />
-      <max value="1" />
-    </element>
-    <element id="Parameters.parameter:evaluateAtDateTime.name">
-      <path value="Parameters.parameter.name" />
-      <fixedString value="evaluateAtDateTime" />
-    </element>
-    <element id="Parameters.parameter:evaluateAtDateTime.value[x]:valueDateTime">
-      <path value="Parameters.parameter.valueDateTime" />
-      <sliceName value="valueDateTime" />
-      <type>
-        <code value="dateTime" />
-      </type>
-    </element>
-    <element id="Parameters.parameter:evaluateAtDateTime.resource">
-      <path value="Parameters.parameter.resource" />
-      <max value="0" />
-    </element>
-    <element id="Parameters.parameter:evaluateAtDateTime.part">
-      <path value="Parameters.parameter.part" />
-      <max value="0" />
-    </element>
     <element id="Parameters.parameter:inputParameters">
       <path value="Parameters.parameter" />
       <sliceName value="inputParameters" />
-      <short value="The input parameters for a request, if any." />
-      <definition value="These parameters are defined by the module that is the target of the evaluation, and typically supply patient-independent information to the module." />
+      <short value="These will be determined by the EMS and CDSS specific to each implementation." />
       <max value="1" />
     </element>
     <element id="Parameters.parameter:inputParameters.name">
@@ -6722,7 +5590,7 @@
       <path value="Parameters.parameter" />
       <sliceName value="inputData" />
       <short value="The input data for the request." />
-      <definition value="These data are defined by the data requirements of the module and typically provide patient-dependent information." />
+      <definition value="The inputData element MUST be populated with FHIR resources detailing the current state of the triage journey." />
     </element>
     <element id="Parameters.parameter:inputData.name">
       <path value="Parameters.parameter.name" />
@@ -6736,7 +5604,7 @@
       <path value="Parameters.parameter" />
       <sliceName value="patient" />
       <short value="The patient in context, if any." />
-      <definition value="The patient in context, if any." />
+      <definition value="This MUST be populated with a reference to a Patient resource." />
       <max value="1" />
     </element>
     <element id="Parameters.parameter:patient.name">
@@ -6761,7 +5629,7 @@
       <path value="Parameters.parameter" />
       <sliceName value="encounter" />
       <short value="The encounter in context, if any." />
-      <definition value="The encounter in context, if any." />
+      <definition value="This MUST be populated by the EMS with the logical Id of the Encounter." />
       <max value="1" />
     </element>
     <element id="Parameters.parameter:encounter.name">
@@ -6786,7 +5654,7 @@
       <path value="Parameters.parameter" />
       <sliceName value="initiatingOrganization" />
       <short value="The organization initiating the request." />
-      <definition value="The organization initiating the request." />
+      <definition value="This SHOULD be populated by the EMS using the logical Id for the UEC service provider. Note that this is the same as the receivingOrganization. If this is an online (patient facing) system, then this MUST NOT be populated." />
       <max value="1" />
     </element>
     <element id="Parameters.parameter:initiatingOrganization.name">
@@ -6811,7 +5679,7 @@
       <path value="Parameters.parameter" />
       <sliceName value="initiatingPerson" />
       <short value="The person initiating the request." />
-      <definition value="The person initiating the request." />
+      <definition value="This MUST be populated by the EMS. The initiatingPerson is the user of the EMS. This will typically be a Patient or RelatedPerson if the EMS is being used by a member of the public (e.g. a patient-facing public internet system) or a Practitioner where initiatingOrganisation is populated. Note that this is the same as the receivingPerson." />
       <max value="1" />
     </element>
     <element id="Parameters.parameter:initiatingPerson.name">
@@ -6839,14 +5707,14 @@
       <path value="Parameters.parameter" />
       <sliceName value="userType" />
       <short value="The type of user initiating the request" />
-      <definition value="The type of user initiating the request, e.g. patient, healthcare provider, or specific type of healthcare provider (physician, nurse, etc.)." />
+      <definition value="The userType parameter of note MUST be provided by the EMS. If the userType is patient, then the CDSS SHOULD use first person pronouns." />
       <max value="1" />
     </element>
     <element id="Parameters.parameter:userType.name">
       <path value="Parameters.parameter.name" />
       <fixedString value="userType" />
     </element>
-    <element id="Parameters.parameter:userType.value[x]:valueCodeableConcept">
+    <element id="Parameters.parameter:userType.valueCodeableConcept:valueCodeableConcept">
       <path value="Parameters.parameter.valueCodeableConcept" />
       <sliceName value="valueCodeableConcept" />
       <type>
@@ -6865,14 +5733,14 @@
       <path value="Parameters.parameter" />
       <sliceName value="userLanguage" />
       <short value="Preferred language of the person using the system." />
-      <definition value="Preferred language of the person using the system." />
+      <definition value="This SHOULD be provided by the EMS, based on the user requirements." />
       <max value="1" />
     </element>
     <element id="Parameters.parameter:userLanguage.name">
       <path value="Parameters.parameter.name" />
       <fixedString value="userLanguage" />
     </element>
-    <element id="Parameters.parameter:userLanguage.value[x]:valueCodeableConcept">
+    <element id="Parameters.parameter:userLanguage.valueCodeableConcept:valueCodeableConcept">
       <path value="Parameters.parameter.valueCodeableConcept" />
       <sliceName value="valueCodeableConcept" />
       <type>
@@ -6891,14 +5759,14 @@
       <path value="Parameters.parameter" />
       <sliceName value="userTaskContext" />
       <short value="The task the system user is performing." />
-      <definition value="The task the system user is performing, e.g. laboratory results review, medication list review, etc. This information can be used to tailor decision support outputs, such as recommended information resources." />
+      <definition value="This SHOULD be provided by the EMS, as it may be used to tailor decision support outputs." />
       <max value="1" />
     </element>
     <element id="Parameters.parameter:userTaskContext.name">
       <path value="Parameters.parameter.name" />
       <fixedString value="userTaskContext" />
     </element>
-    <element id="Parameters.parameter:userTaskContext.value[x]:valueCodeableConcept">
+    <element id="Parameters.parameter:userTaskContext.valueCodeableConcept:valueCodeableConcept">
       <path value="Parameters.parameter.valueCodeableConcept" />
       <sliceName value="valueCodeableConcept" />
       <type>
@@ -6917,7 +5785,7 @@
       <path value="Parameters.parameter" />
       <sliceName value="receivingOrganization" />
       <short value="The organization that will receive the response." />
-      <definition value="The organization that will receive the response." />
+      <definition value="This SHOULD be populated with the organisation identifier for the UEC service provider. If this is an online (patient facing) system, then this MUST NOT be populated. Note that this is the same as the initiatingOrganisation." />
       <max value="1" />
     </element>
     <element id="Parameters.parameter:receivingOrganization.name">
@@ -6942,7 +5810,7 @@
       <path value="Parameters.parameter" />
       <sliceName value="receivingPerson" />
       <short value="The person in the receiving organization that will receive the response." />
-      <definition value="The person in the receiving organization that will receive the response." />
+      <definition value="This MUST be populated by the EMS, based on the user. In the case of an online (patient-facing) system, this may be Patient or RelatedPerson. Note that this is the same as the initiatingPerson." />
       <max value="1" />
     </element>
     <element id="Parameters.parameter:receivingPerson.name">
@@ -6967,14 +5835,14 @@
       <path value="Parameters.parameter" />
       <sliceName value="recipientType" />
       <short value="The type of individual that will consume the response content." />
-      <definition value="The type of individual that will consume the response content. This may be different from the requesting user type (e.g. if a clinician is getting disease management guidance for provision to a patient). E.g. patient, healthcare provider or specific type of healthcare provider (physician, nurse, etc.)." />
+      <definition value="This will be the patient (or a related person, if telephoning on behalf of the patient)." />
       <max value="1" />
     </element>
     <element id="Parameters.parameter:recipientType.name">
       <path value="Parameters.parameter.name" />
       <fixedString value="recipientType" />
     </element>
-    <element id="Parameters.parameter:recipientType.value[x]:valueCodeableConcept">
+    <element id="Parameters.parameter:recipientType.valueCodeableConcept:valueCodeableConcept">
       <path value="Parameters.parameter.valueCodeableConcept" />
       <sliceName value="valueCodeableConcept" />
       <type>
@@ -6993,14 +5861,14 @@
       <path value="Parameters.parameter" />
       <sliceName value="recipientLanguage" />
       <short value="Preferred language of the person that will consume the content." />
-      <definition value="Preferred language of the person that will consume the content." />
+      <definition value="This SHOULD be populated by the EMS where known for the recipient and will be populated with the same value as contained in the userLanguage parameter." />
       <max value="1" />
     </element>
     <element id="Parameters.parameter:recipientLanguage.name">
       <path value="Parameters.parameter.name" />
       <fixedString value="recipientLanguage" />
     </element>
-    <element id="Parameters.parameter:recipientLanguage.value[x]:valueCodeableConcept">
+    <element id="Parameters.parameter:recipientLanguage.valueCodeableConcept:valueCodeableConcept">
       <path value="Parameters.parameter.valueCodeableConcept" />
       <sliceName value="valueCodeableConcept" />
       <type>
@@ -7019,14 +5887,14 @@
       <path value="Parameters.parameter" />
       <sliceName value="setting" />
       <short value="The current setting of the request (inpatient, outpatient, etc)." />
-      <definition value="The current setting of the request (inpatient, outpatient, etc)." />
+      <definition value="This MUST be provided by the EMS to give context for decision support." />
       <max value="1" />
     </element>
     <element id="Parameters.parameter:setting.name">
       <path value="Parameters.parameter.name" />
       <fixedString value="setting" />
     </element>
-    <element id="Parameters.parameter:setting.value[x]:valueCodeableConcept">
+    <element id="Parameters.parameter:setting.valueCodeableConcept:valueCodeableConcept">
       <path value="Parameters.parameter.valueCodeableConcept" />
       <sliceName value="valueCodeableConcept" />
       <type>
@@ -7052,7 +5920,7 @@
       <path value="Parameters.parameter.name" />
       <fixedString value="settingContext" />
     </element>
-    <element id="Parameters.parameter:settingContext.value[x]:valueCodeableConcept">
+    <element id="Parameters.parameter:settingContext.valueCodeableConcept:valueCodeableConcept">
       <path value="Parameters.parameter.valueCodeableConcept" />
       <sliceName value="valueCodeableConcept" />
       <type>
