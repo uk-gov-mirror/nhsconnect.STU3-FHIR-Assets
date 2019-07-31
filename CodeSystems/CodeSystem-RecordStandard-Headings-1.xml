@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
 	<id value="RecordStandard-Headings-1"/>
 	<url value="https://fhir.nhs.uk/STU3/CodeSystem/RecordStandard-Headings-1"/>
@@ -13,690 +13,691 @@
 	<content value="complete"/>
 	<concept>
 		<code value="actions"/>
-		<display value="Actions (PRSB heading)"/>
+		<display value="Actions"/>
 	</concept>
 	<concept>
 		<code value="clinical-administration"/>
-		<display value="Clinical administration (PRSB heading)"/>
+		<display value="Clinical administration"/>
 	</concept>
 	<concept>
 		<code value="current-palliative-oncology-treatment"/>
-		<display value="Current palliative oncology treatment (PRSB heading)"/>
+		<display value="Current palliative oncology treatment"/>
 	</concept>
 	<concept>
 		<code value="current-supportive-care-for-terminal-illness"/>
-		<display value="Current supportive care for terminal illness (PRSB heading)"/>
+		<display value="Current supportive care for terminal illness"/>
 	</concept>
 	<concept>
 		<code value="intervention"/>
-		<display value="Intervention (PRSB heading)"/>
+		<display value="Intervention"/>
 	</concept>
 	<concept>
 		<code value="intervention-on-development-of-symptoms"/>
-		<display value="Intervention on development of symptoms (PRSB heading)"/>
+		<display value="Intervention on development of symptoms"/>
 	</concept>
 	<concept>
 		<code value="medical-follow-up"/>
-		<display value="Medical follow-up (PRSB heading)"/>
+		<display value="Medical follow-up"/>
 	</concept>
 	<concept>
 		<code value="medical-follow-up-normal"/>
-		<display value="Medical follow-up - normal (PRSB heading)"/>
+		<display value="Medical follow-up - normal"/>
 	</concept>
 	<concept>
 		<code value="mental-health-therapy-follow-up"/>
-		<display value="Mental health therapy follow-up (PRSB heading)"/>
+		<display value="Mental health therapy follow-up"/>
 	</concept>
 	<concept>
 		<code value="participation"/>
-		<display value="Participation (PRSB heading)"/>
+		<display value="Participation"/>
 	</concept>
 	<concept>
 		<code value="planned-supportive-care-for-terminal-illness"/>
-		<display value="Planned supportive care for terminal illness (PRSB heading)"/>
+		<display value="Planned supportive care for terminal illness"/>
 	</concept>
 	<concept>
 		<code value="treatment"/>
-		<display value="Treatment (PRSB heading)"/>
+		<display value="Treatment"/>
 	</concept>
 	<concept>
 		<code value="oncology-treatment"/>
-		<display value="Oncology treatment (PRSB heading)"/>
+		<display value="Oncology treatment"/>
 	</concept>
 	<concept>
 		<code value="planned-treatment"/>
-		<display value="Planned treatment (PRSB heading)"/>
+		<display value="Planned treatment"/>
 	</concept>
 	<concept>
 		<code value="planned-palliative-oncology-treatment"/>
-		<display value="Planned palliative oncology treatment (PRSB heading)"/>
+		<display value="Planned palliative oncology treatment"/>
 	</concept>
 	<concept>
 		<code value="ultraviolet-light-therapy-treatment-record"/>
-		<display value="Ultraviolet light therapy treatment record (PRSB heading)"/>
+		<display value="Ultraviolet light therapy treatment record"/>
 	</concept>
 	<concept>
 		<code value="admission-details"/>
-		<display value="Admission details (PRSB heading)"/>
+		<display value="Admission details"/>
 	</concept>
 	<concept>
 		<code value="advance-decisions-about-treatment"/>
-		<display value="Advance decisions about treatment (PRSB heading)"/>
+		<display value="Advance decisions about treatment"/>
 	</concept>
 	<concept>
 		<code value="advance-decision-to-refuse-treatment"/>
-		<display value="Advance decision to refuse treatment (PRSB heading)"/>
+		<display value="Advance decision to refuse treatment"/>
 	</concept>
 	<concept>
 		<code value="advance-statement"/>
-		<display value="Advance statement (PRSB heading)"/>
+		<display value="Advance statement"/>
 	</concept>
 	<concept>
 		<code value="allergies-and-adverse-reaction"/>
-		<display value="Allergies and adverse reaction (PRSB heading)"/>
+		<display value="Allergies and adverse reaction"/>
 	</concept>
 	<concept>
 		<code value="appointment"/>
-		<display value="Appointment (PRSB heading)"/>
+		<display value="Appointment"/>
 	</concept>
 	<concept>
 		<code value="community-disease-modifying-antirheumatic-drug-monitoring-appointment"/>
-		<display value="Community disease modifying antirheumatic drug monitoring appointment (PRSB heading)"/>
+		<display value="Community disease modifying antirheumatic drug monitoring appointment"/>
 	</concept>
 	<concept>
 		<code value="emergency-appointment"/>
-		<display value="Emergency appointment (PRSB heading)"/>
+		<display value="Emergency appointment"/>
 	</concept>
 	<concept>
 		<code value="new-appointment"/>
-		<display value="New appointment (PRSB heading)"/>
+		<display value="New appointment"/>
 	</concept>
 	<concept>
 		<code value="review-appointment"/>
-		<display value="Review appointment (PRSB heading)"/>
+		<display value="Review appointment"/>
 	</concept>
 	<concept>
 		<code value="assessment-scales"/>
-		<display value="Assessment scales (PRSB heading)"/>
+		<display value="Assessment scales"/>
 	</concept>
 	<concept>
 		<code value="attendance-details"/>
-		<display value="Attendance details (PRSB heading)"/>
+		<display value="Attendance details"/>
 	</concept>
 	<concept>
 		<code value="clinical-narrative"/>
-		<display value="Clinical narrative (PRSB heading)"/>
+		<display value="Clinical narrative"/>
 	</concept>
 	<concept>
 		<code value="clinical-risk-assessment"/>
-		<display value="Clinical risk assessment (PRSB heading)"/>
+		<display value="Clinical risk assessment"/>
 	</concept>
 	<concept>
 		<code value="clinical-summary"/>
-		<display value="Clinical summary (PRSB heading)"/>
+		<display value="Clinical summary"/>
 	</concept>
 	<concept>
 		<code value="confidential-patient-data"/>
-		<display value="Confidential patient data (PRSB heading)"/>
+		<display value="Confidential patient data"/>
 	</concept>
 	<concept>
 		<code value="consent-for-information-sharing"/>
-		<display value="Consent for information sharing (PRSB heading)"/>
+		<display value="Consent for information sharing"/>
 	</concept>
 	<concept>
 		<code value="consent-for-treatment-record"/>
-		<display value="Consent for treatment record (PRSB heading)"/>
+		<display value="Consent for treatment record"/>
 	</concept>
 	<concept>
 		<code value="consent-for-treatment-intervention-record"/>
-		<display value="Consent for treatment/intervention record (PRSB heading)"/>
+		<display value="Consent for treatment/intervention record"/>
 	</concept>
 	<concept>
 		<code value="consent-relating-to-child"/>
-		<display value="Consent relating to child (PRSB heading)"/>
+		<display value="Consent relating to child"/>
 	</concept>
 	<concept>
 		<code value="contact-for-further-information"/>
-		<display value="Contact for further information (PRSB heading)"/>
+		<display value="Contact for further information"/>
 	</concept>
 	<concept>
 		<code value="deprivation-of-liberty-safeguards-or-equivalent"/>
-		<display value="Deprivation of Liberty Safeguards or equivalent (PRSB heading)"/>
+		<display value="Deprivation of Liberty Safeguards or equivalent"/>
 	</concept>
 	<concept>
 		<code value="diagnoses"/>
-		<display value="Diagnoses (PRSB heading)"/>
+		<display value="Diagnoses"/>
 	</concept>
 	<concept>
 		<code value="discharge-details"/>
-		<display value="Discharge details (PRSB heading)"/>
+		<display value="Discharge details"/>
 	</concept>
 	<concept>
 		<code value="disposition-details"/>
-		<display value="Disposition details (PRSB heading)"/>
+		<display value="Disposition details"/>
 	</concept>
 	<concept>
 		<code value="distribution-list"/>
-		<display value="Distribution list (PRSB heading)"/>
+		<display value="Distribution list"/>
 	</concept>
 	<concept>
 		<code value="drug/substance-use"/>
-		<display value="Drug/substance use (PRSB heading)"/>
+		<display value="Drug/substance use"/>
 	</concept>
 	<concept>
 		<code value="educational-history"/>
-		<display value="Educational history (PRSB heading)"/>
+		<display value="Educational history"/>
 	</concept>
 	<concept>
 		<code value="ended-allergies"/>
-		<display value="Ended allergies (PRSB heading)"/>
+		<display value="Ended allergies"/>
 	</concept>
 	<concept>
 		<code value="expectation-of-referral"/>
-		<display value="Expectation of referral (PRSB heading)"/>
+		<display value="Expectation of referral"/>
 	</concept>
 	<concept>
 		<code value="family-history"/>
-		<display value="Family history (PRSB heading)"/>
+		<display value="Family history"/>
 	</concept>
 	<concept>
 		<code value="general-practitioner-practice"/>
-		<display value="General practitioner practice (PRSB heading)"/>
+		<display value="General practitioner practice"/>
 	</concept>
 	<concept>
 		<code value="handover-details"/>
-		<display value="Handover details (PRSB heading)"/>
+		<display value="Handover details"/>
 	</concept>
 	<concept>
 		<code value="health-characteristics"/>
-		<display value="Health characteristics (PRSB heading)"/>
+		<display value="Health characteristics"/>
 	</concept>
 	<concept>
 		<code value="acute-medication"/>
-		<display value="Acute medication (PRSB heading)"/>
+		<display value="Acute medication"/>
 	</concept>
 	<concept>
 		<code value="carer-perception-of-problem"/>
-		<display value="Carer perception of problem (PRSB heading)"/>
+		<display value="Carer perception of problem"/>
 	</concept>
 	<concept>
 		<code value="diagnosis"/>
-		<display value="Diagnosis (PRSB heading)"/>
+		<display value="Diagnosis"/>
 	</concept>
 	<concept>
 		<code value="examination-findings"/>
-		<display value="Examination findings (PRSB heading)"/>
+		<display value="Examination findings"/>
 	</concept>
 	<concept>
 		<code value="history"/>
-		<display value="History (PRSB heading)"/>
+		<display value="History"/>
 	</concept>
 	<concept>
 		<code value="diagnostic-history"/>
-		<display value="Diagnostic history (PRSB heading)"/>
+		<display value="Diagnostic history"/>
 	</concept>
 	<concept>
 		<code value="diagnostic-history-oncology"/>
-		<display value="Diagnostic history - oncology (PRSB heading)"/>
+		<display value="Diagnostic history - oncology"/>
 	</concept>
 	<concept>
 		<code value="patient-narrative"/>
-		<display value="Patient narrative (PRSB heading)"/>
+		<display value="Patient narrative"/>
 	</concept>
 	<concept>
 		<code value="professional-narrative"/>
-		<display value="Professional narrative (PRSB heading)"/>
+		<display value="Professional narrative"/>
 	</concept>
 	<concept>
 		<code value="hobbies-and-interests"/>
-		<display value="Hobbies and interests (PRSB heading)"/>
+		<display value="Hobbies and interests"/>
 	</concept>
 	<concept>
 		<code value="outcome"/>
-		<display value="Outcome (PRSB heading)"/>
+		<display value="Outcome"/>
 	</concept>
 	<concept>
 		<code value="patient-encounter-administration-data"/>
-		<display value="Patient encounter administration data (PRSB heading)"/>
+		<display value="Patient encounter administration data"/>
 	</concept>
 	<concept>
 		<code value="patient-perception-of-problem"/>
-		<display value="Patient perception of problem (PRSB heading)"/>
+		<display value="Patient perception of problem"/>
 	</concept>
 	<concept>
 		<code value="relevant-medical-information"/>
-		<display value="Relevant medical information (PRSB heading)"/>
+		<display value="Relevant medical information"/>
 	</concept>
 	<concept>
 		<code value="repeat-medication"/>
-		<display value="Repeat medication (PRSB heading)"/>
+		<display value="Repeat medication"/>
 	</concept>
 	<concept>
 		<code value="discontinued-repeat-medication"/>
-		<display value="Discontinued repeat medication (PRSB heading)"/>
+		<display value="Discontinued repeat medication"/>
 	</concept>
 	<concept>
 		<code value="social-circumstances"/>
-		<display value="Social circumstances (PRSB heading)"/>
+		<display value="Social circumstances"/>
 	</concept>
 	<concept>
 		<code value="test-result"/>
-		<display value="Test result (PRSB heading)"/>
+		<display value="Test result"/>
 	</concept>
 	<concept>
 		<code value="workplace-ergonomics"/>
-		<display value="Workplace ergonomics (PRSB heading)"/>
+		<display value="Workplace ergonomics"/>
 	</concept>
 	<concept>
 		<code value="histocompatibility-and-immunogenetics"/>
-		<display value="Histocompatibility and immunogenetics (PRSB heading)"/>
+		<display value="Histocompatibility and immunogenetics"/>
 	</concept>
 	<concept>
 		<code value="immunisations"/>
-		<display value="Immunisations (PRSB heading)"/>
+		<display value="Immunisations"/>
 	</concept>
 	<concept>
 		<code value="incident-details"/>
-		<display value="Incident details (PRSB heading)"/>
+		<display value="Incident details"/>
 	</concept>
 	<concept>
 		<code value="individual-requirement"/>
-		<display value="Individual requirement (PRSB heading)"/>
+		<display value="Individual requirement"/>
 	</concept>
 	<concept>
 		<code value="individual-requirements"/>
-		<display value="Individual requirements (PRSB heading)"/>
+		<display value="Individual requirements"/>
 	</concept>
 	<concept>
 		<code value="individualised-treatment-guideline"/>
-		<display value="Individualised Treatment Guideline (PRSB heading)"/>
+		<display value="Individualised Treatment Guideline"/>
 	</concept>
 	<concept>
 		<code value="information-given"/>
-		<display value="Information given (PRSB heading)"/>
+		<display value="Information given"/>
 	</concept>
 	<concept>
 		<code value="information-and-advice-given"/>
-		<display value="Information and advice given (PRSB heading)"/>
+		<display value="Information and advice given"/>
 	</concept>
 	<concept>
 		<code value="investigation-results"/>
-		<display value="Investigation results (PRSB heading)"/>
+		<display value="Investigation results"/>
 	</concept>
 	<concept>
 		<code value="investigations-and-procedures-requested"/>
-		<display value="Investigations and procedures requested (PRSB heading)"/>
+		<display value="Investigations and procedures requested"/>
 	</concept>
 	<concept>
 		<code value="investigations-and-results"/>
-		<display value="Investigations and results (PRSB heading)"/>
+		<display value="Investigations and results"/>
 	</concept>
 	<concept>
 		<code value="investigations-requested"/>
-		<display value="Investigations requested (PRSB heading)"/>
+		<display value="Investigations requested"/>
 	</concept>
 	<concept>
 		<code value="lasting-or-enduring-power-of-attorney-or-similar"/>
-		<display value="Lasting or enduring power of attorney or similar (PRSB heading)"/>
+		<display value="Lasting or enduring power of attorney or similar"/>
 	</concept>
 	<concept>
 		<code value="lasting-power-of-attorney-for-health-and-welfare-or-court-appointed-deputy-or-equivalent"/>
-		<display value="Lasting power of attorney for health and welfare or court-appointed deputy or equivalent (PRSB heading)"/>
+		<display value="Lasting power of attorney for health and welfare or court-appointed deputy or equivalent"/>
 	</concept>
 	<concept>
 		<code value="legal-information"/>
-		<display value="Legal information (PRSB heading)"/>
+		<display value="Legal information"/>
 	</concept>
 	<concept>
 		<code value="life-extinct-details"/>
-		<display value="Life extinct details (PRSB heading)"/>
+		<display value="Life extinct details"/>
 	</concept>
 	<concept>
 		<code value="lifestyle"/>
-		<display value="Lifestyle (PRSB heading)"/>
+		<display value="Lifestyle"/>
 	</concept>
 	<concept>
 		<code value="medications-and-medical-devices"/>
-		<display value="Medications and medical devices (PRSB heading)"/>
+		<display value="Medications and medical devices"/>
 	</concept>
 	<concept>
 		<code value="active-medications"/>
-		<display value="Active medications (PRSB heading)"/>
+		<display value="Active medications"/>
 	</concept>
 	<concept>
 		<code value="discontinued-medications"/>
-		<display value="Discontinued medications (PRSB heading)"/>
+		<display value="Discontinued medications"/>
 	</concept>
 	<concept>
 		<code value="medical-devices"/>
-		<display value="Medical devices (PRSB heading)"/>
+		<display value="Medical devices"/>
 	</concept>
 	<concept>
 		<code value="mental-capacity-assessment"/>
-		<display value="Mental capacity assessment (PRSB heading)"/>
+		<display value="Mental capacity assessment"/>
 	</concept>
 	<concept>
 		<code value="mental-health-act-or-equivalent-status"/>
-		<display value="Mental Health Act or equivalent status (PRSB heading)"/>
+		<display value="Mental Health Act or equivalent status"/>
 	</concept>
 	<concept>
 		<code value="most-senior-healthcare-professional-present"/>
-		<display value="Most senior healthcare professional present (PRSB heading)"/>
+		<display value="Most senior healthcare professional present"/>
 	</concept>
 	<concept>
 		<code value="nuclear-medicine-images"/>
-		<display value="Nuclear medicine images (PRSB heading)"/>
+		<display value="Nuclear medicine images"/>
 	</concept>
 	<concept>
 		<code value="observations"/>
-		<display value="Observations (PRSB heading)"/>
+		<display value="Observations"/>
 	</concept>
 	<concept>
 		<code value="occupational-history"/>
-		<display value="Occupational history (PRSB heading)"/>
+		<display value="Occupational history"/>
 	</concept>
 	<concept>
 		<code value="organ-and-tissue-donation"/>
-		<display value="Organ and tissue donation (PRSB heading)"/>
+		<display value="Organ and tissue donation"/>
 	</concept>
 	<concept>
 		<code value="outpatient-details"/>
-		<display value="Outpatient details (PRSB heading)"/>
+		<display value="Outpatient details"/>
 	</concept>
 	<concept>
 		<code value="outstanding-issues"/>
-		<display value="Outstanding issues (PRSB heading)"/>
+		<display value="Outstanding issues"/>
 	</concept>
 	<concept>
 		<code value="participation-in-research"/>
-		<display value="Participation in research (PRSB heading)"/>
+		<display value="Participation in research"/>
 	</concept>
 	<concept>
 		<code value="patient-and-carer-concerns"/>
-		<display value="Patient and carer concerns (PRSB heading)"/>
+		<display value="Patient and carer concerns"/>
 	</concept>
 	<concept>
 		<code value="patient-and-carer-concerns-expectations-and-wishes"/>
-		<display value="Patient and carer concerns, expectations and wishes (PRSB heading)"/>
+		<display value="Patient and carer concerns, expectations and wishes"/>
 	</concept>
 	<concept>
 		<code value="patient-demographics"/>
-		<display value="Patient demographics (PRSB heading)"/>
+		<display value="Patient demographics"/>
 	</concept>
 	<concept>
 		<code value="patients-expectation-of-referral"/>
-		<display value="Patient's expectation of referral (PRSB heading)"/>
+		<display value="Patient's expectation of referral"/>
 	</concept>
 	<concept>
 		<code value="patients-reason-for-referral"/>
-		<display value="Patient's reason for referral (PRSB heading)"/>
+		<display value="Patient's reason for referral"/>
 	</concept>
 	<concept>
 		<code value="person-completing-record"/>
-		<display value="Person completing record (PRSB heading)"/>
+		<display value="Person completing record"/>
 	</concept>
 	<concept>
 		<code value="person-handing-over"/>
-		<display value="Person handing over (PRSB heading)"/>
+		<display value="Person handing over"/>
 	</concept>
 	<concept>
 		<code value="person-receiving-handover"/>
-		<display value="Person receiving handover (PRSB heading)"/>
+		<display value="Person receiving handover"/>
 	</concept>
 	<concept>
 		<code value="plan-and-requested-actions"/>
-		<display value="Plan and requested actions (PRSB heading)"/>
+		<display value="Plan and requested actions"/>
 	</concept>
 	<concept>
 		<code value="presenting-complaints-or-issues"/>
-		<display value="Presenting complaints or issues (PRSB heading)"/>
+		<display value="Presenting complaints or issues"/>
 	</concept>
 	<concept>
 		<code value="problems-and-issues"/>
-		<display value="Problems and issues (PRSB heading)"/>
+		<display value="Problems and issues"/>
 	</concept>
 	<concept>
 		<code value="procedure-codes-community"/>
-		<display value="Procedure codes (community) (PRSB heading)"/>
+		<display value="Procedure codes (community)"/>
 	</concept>
 	<concept>
 		<code value="procedures"/>
-		<display value="Procedures (PRSB heading)"/>
+		<display value="Procedures"/>
 	</concept>
 	<concept>
 		<code value="procedures-requested"/>
-		<display value="Procedures requested (PRSB heading)"/>
+		<display value="Procedures requested"/>
 	</concept>
 	<concept>
 		<code value="reason-for-admission"/>
-		<display value="Reason for admission (PRSB heading)"/>
+		<display value="Reason for admission"/>
 	</concept>
 	<concept>
 		<code value="reason-for-contact"/>
-		<display value="Reason for contact (PRSB heading)"/>
+		<display value="Reason for contact"/>
 	</concept>
 	<concept>
 		<code value="reason-for-handover"/>
-		<display value="Reason for handover (PRSB heading)"/>
+		<display value="Reason for handover"/>
 	</concept>
 	<concept>
 		<code value="reasonable-adjustments-for-health-and-care-access"/>
-		<display value="Reasonable adjustments for health and care access (PRSB heading)"/>
+		<display value="Reasonable adjustments for health and care access"/>
 	</concept>
 	<concept>
 		<code value="referral-details"/>
-		<display value="Referral details (PRSB heading)"/>
+		<display value="Referral details"/>
 	</concept>
 	<concept>
 		<code value="referrer-details"/>
-		<display value="Referrer details (PRSB heading)"/>
+		<display value="Referrer details"/>
 	</concept>
 	<concept>
 		<code value="referral-modes"/>
-		<display value="Referral modes (PRSB heading)"/>
+		<display value="Referral modes"/>
 	</concept>
 	<concept>
 		<code value="inbound-referral"/>
-		<display value="Inbound referral (PRSB heading)"/>
+		<display value="Inbound referral"/>
 	</concept>
 	<concept>
 		<code value="letter-with-patient"/>
-		<display value="Letter with patient (PRSB heading)"/>
+		<display value="Letter with patient"/>
 	</concept>
 	<concept>
 		<code value="outbound-referral"/>
-		<display value="Outbound referral (PRSB heading)"/>
+		<display value="Outbound referral"/>
 	</concept>
 	<concept>
 		<code value="request-form-or-letter-sent-by-mail-email"/>
-		<display value="Request form or letter sent by mail/email (PRSB heading)"/>
+		<display value="Request form or letter sent by mail/email"/>
 	</concept>
 	<concept>
 		<code value="telephone-contact-only"/>
-		<display value="Telephone contact only (PRSB heading)"/>
+		<display value="Telephone contact only"/>
 	</concept>
 	<concept>
 		<code value="relevant-clinical-risk-factors"/>
-		<display value="Relevant clinical risk factors (PRSB heading)"/>
+		<display value="Relevant clinical risk factors"/>
 	</concept>
 	<concept>
 		<code value="relevant-past-medical-surgical-and-mental-health-history"/>
-		<display value="Relevant past medical, surgical and mental health history (PRSB heading)"/>
+		<display value="Relevant past medical, surgical and mental health history"/>
 	</concept>
 	<concept>
 		<code value="request-types"/>
-		<display value="Request types (PRSB heading)"/>
+		<display value="Request types"/>
 	</concept>
 	<concept>
 		<code value="diagnostic-imaging-request"/>
-		<display value="Diagnostic imaging request (PRSB heading)"/>
+		<display value="Diagnostic imaging request"/>
 	</concept>
 	<concept>
 		<code value="diagnostic-imaging-request-summary"/>
-		<display value="Diagnostic imaging request summary (PRSB heading)"/>
+		<display value="Diagnostic imaging request summary"/>
 	</concept>
 	<concept>
 		<code value="relevant-clinical-information-for-diagnostic-imaging-request"/>
-		<display value="Relevant clinical information for diagnostic imaging request (PRSB heading)"/>
+		<display value="Relevant clinical information for diagnostic imaging request"/>
 	</concept>
 	<concept>
 		<code value="relevant-supporting-information-for-diagnostic-imaging-request"/>
-		<display value="Relevant supporting information for diagnostic imaging request (PRSB heading)"/>
+		<display value="Relevant supporting information for diagnostic imaging request"/>
 	</concept>
 	<concept>
 		<code value="fulfiller-request"/>
-		<display value="Fulfiller request (PRSB heading)"/>
+		<display value="Fulfiller request"/>
 	</concept>
 	<concept>
 		<code value="fulfiller-request-details"/>
-		<display value="Fulfiller request details (PRSB heading)"/>
+		<display value="Fulfiller request details"/>
 	</concept>
 	<concept>
 		<code value="request"/>
-		<display value="Request (PRSB heading)"/>
+		<display value="Request"/>
 	</concept>
 	<concept>
 		<code value="review-of-systems"/>
-		<display value="Review of systems (PRSB heading)"/>
+		<display value="Review of systems"/>
 	</concept>
 	<concept>
 		<code value="risk-from-others"/>
-		<display value="Risk from others (PRSB heading)"/>
+		<display value="Risk from others"/>
 	</concept>
 	<concept>
 		<code value="risk-information"/>
-		<display value="Risk information (PRSB heading)"/>
+		<display value="Risk information"/>
 	</concept>
 	<concept>
 		<code value="risk-mitigation"/>
-		<display value="Risk mitigation (PRSB heading)"/>
+		<display value="Risk mitigation"/>
 	</concept>
 	<concept>
 		<code value="risks-to-others"/>
-		<display value="Risks to others (PRSB heading)"/>
+		<display value="Risks to others"/>
 	</concept>
 	<concept>
 		<code value="risks-to-self"/>
-		<display value="Risks to self (PRSB heading)"/>
+		<display value="Risks to self"/>
 	</concept>
 	<concept>
 		<code value="role-views"/>
-		<display value="Role views (PRSB heading)"/>
+		<display value="Role views"/>
 	</concept>
 	<concept>
 		<code value="abstract-problem-node"/>
-		<display value="Abstract problem node (PRSB heading)"/>
+		<display value="Abstract problem node"/>
 	</concept>
 	<concept>
 		<code value="alerts"/>
-		<display value="Alerts (PRSB heading)"/>
+		<display value="Alerts"/>
 	</concept>
 	<concept>
 		<code value="problems"/>
-		<display value="Problems (PRSB heading)"/>
+		<display value="Problems"/>
 	</concept>
 	<concept>
 		<code value="reason-for-encounter"/>
-		<display value="Reason for encounter (PRSB heading)"/>
+		<display value="Reason for encounter"/>
 	</concept>
 	<concept>
 		<code value="reason-for-referral"/>
-		<display value="Reason for referral (PRSB heading)"/>
+		<display value="Reason for referral"/>
 	</concept>
 	<concept>
 		<code value="reason-for-repeat-laboratory-test"/>
-		<display value="Reason for repeat laboratory test (PRSB heading)"/>
+		<display value="Reason for repeat laboratory test"/>
 	</concept>
 	<concept>
 		<code value="safeguarding"/>
-		<display value="Safeguarding (PRSB heading)"/>
+		<display value="Safeguarding"/>
 	</concept>
 	<concept>
 		<code value="safeguarding-issues"/>
-		<display value="Safeguarding issues (PRSB heading)"/>
+		<display value="Safeguarding issues"/>
 	</concept>
 	<concept>
 		<code value="safety-alerts"/>
-		<display value="Safety alerts (PRSB heading)"/>
+		<display value="Safety alerts"/>
 	</concept>
 	<concept>
 		<code value="screening-invitation-medium"/>
-		<display value="Screening invitation medium (PRSB heading)"/>
+		<display value="Screening invitation medium"/>
 	</concept>
 	<concept>
 		<code value="screening-method"/>
-		<display value="Screening method (PRSB heading)"/>
+		<display value="Screening method"/>
 	</concept>
 	<concept>
 		<code value="senior-reviewing-clinician"/>
-		<display value="Senior reviewing clinician (PRSB heading)"/>
+		<display value="Senior reviewing clinician"/>
 	</concept>
 	<concept>
 		<code value="services-and-care"/>
-		<display value="Services and care (PRSB heading)"/>
+		<display value="Services and care"/>
 	</concept>
 	<concept>
 		<code value="social-context"/>
-		<display value="Social context (PRSB heading)"/>
+		<display value="Social context"/>
 	</concept>
 	<concept>
 		<code value="special-requirements"/>
-		<display value="Special requirements (PRSB heading)"/>
+		<display value="Special requirements"/>
 	</concept>
 	<concept>
 		<code value="time-modifiers"/>
-		<display value="Time modifiers (PRSB heading)"/>
+		<display value="Time modifiers"/>
 	</concept>
 	<concept>
 		<code value="future"/>
-		<display value="Future (PRSB heading)"/>
+		<display value="Future"/>
 	</concept>
 	<concept>
 		<code value="outlook"/>
-		<display value="Outlook (PRSB heading)"/>
+		<display value="Outlook"/>
 	</concept>
 	<concept>
 		<code value="aim-goal"/>
-		<display value="Aim/goal (PRSB heading)"/>
+		<display value="Aim/goal"/>
 	</concept>
 	<concept>
 		<code value="at-risk-of"/>
-		<display value="At risk of (PRSB heading)"/>
+		<display value="At risk of"/>
 	</concept>
 	<concept>
 		<code value="risk-to-patient"/>
-		<display value="Risk to patient (PRSB heading)"/>
+		<display value="Risk to patient"/>
 	</concept>
 	<concept>
 		<code value="plan"/>
-		<display value="Plan (PRSB heading)"/>
+		<display value="Plan"/>
 	</concept>
 	<concept>
 		<code value="past"/>
-		<display value="Past (PRSB heading)"/>
+		<display value="Past"/>
 	</concept>
 	<concept>
 		<code value="past-actions"/>
-		<display value="Past actions (PRSB heading)"/>
+		<display value="Past actions"/>
 	</concept>
 	<concept>
 		<code value="past-health-characteristics"/>
-		<display value="Past health characteristics (PRSB heading)"/>
+		<display value="Past health characteristics"/>
 	</concept>
 	<concept>
 		<code value="present-time"/>
-		<display value="Present - time (PRSB heading)"/>
+		<display value="Present - time"/>
 	</concept>
 	<concept>
 		<code value="treatments-and-interventions"/>
-		<display value="Treatments and interventions (PRSB heading)"/>
+		<display value="Treatments and interventions"/>
 	</concept>
 	<concept>
 		<code value="treatments-and-interventions-and-changes-made-to-treatments"/>
-		<display value="Treatments and interventions and changes made to treatments (PRSB heading)"/>
+		<display value="Treatments and interventions and changes made to treatments"/>
 	</concept>
 	<concept>
 		<code value="visual-field-report"/>
-		<display value="Visual field report (PRSB heading)"/>
+		<display value="Visual field report"/>
 	</concept>
 </CodeSystem>
+
